@@ -1,0 +1,239 @@
+$greencolor:greenyellow;
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(/animation_1/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    margin: 40px;
+    background-color: $greencolor;
+    border: none;
+    border-radius: 20px;
+    &:hover{
+        background-color:lighten($greencolor,$amount:10%);
+        cursor: pointer;
+    }
+    &:focus{
+        background-color: darken($greencolor,$amount:10%);
+    }
+}
+
+.container{
+    width: 328px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    .main{
+        width: 328px;
+        height: 37px;
+        border-radius: 5px;
+        position: relative;
+        padding: 25px 15px;
+        display: none;
+        opacity: 1;
+        position: relative;
+
+        
+        
+        img{
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            top: 30%;
+            left: 15%;
+        }
+        p{
+            box-sizing: border-box;
+            margin-left: 30%;
+            height: 37px;
+            font-size: calc(10px+1vw);
+            width:70%;
+            color:#7d5912;
+            font-weight: bold;
+        }
+        span{
+            width: 0;
+            height: 5px;
+            position: absolute;
+            bottom: 5%;
+            left:5%;
+            background: rgba(255, 255, 255, 0.411);
+        }
+        
+
+    }
+   
+   
+
+}
+
+.yellow {
+    background: #ffe691;
+    border: 1px solid #f6db7b;
+    animation: 6s yel linear;
+    @keyframes yel{
+        0%{
+            opacity:0;
+            transform: translateY(0);
+        }
+        10%{
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+        90%{
+            opacity: 1;
+            transform:translateY(0);
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(-20%);
+            
+        }
+    }
+
+    span{
+        animation: yelspan 6s linear;
+
+       
+        @keyframes yelspan{
+            0%{
+                width: 0px;
+            }
+            10%{
+                width: 0px;
+            }
+            90%{
+                width: 90%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+    }
+}
+
+.green {
+    background: #99ffb1;
+    border: 1px solid #7ce294;
+    animation: 7s gree linear;
+    animation-delay: 0.3s;
+    @keyframes gree{
+        0%{
+            opacity:0;
+            transform: translateY(0);
+        }
+        10%{
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+        90%{
+            opacity: 1;
+            transform:translateY(0);
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(-50%);
+            
+        }
+    }
+    span{
+
+        animation:7s greespan linear;
+        animation-delay: 0.3s;
+    
+        @keyframes greespan{
+        0%{
+            width: 0px;
+        }
+        10%{
+            width: 0px;
+        }
+        90%{
+            width: 90%;
+        }
+        100%{
+            width: 90%;
+        }
+    }
+    }   
+}
+
+
+
+
+.violet {
+    background: #dd9aff;
+    border: 1px solid #b367db;
+    animation: 10s viola linear;
+    animation-delay: 0.6s;
+    p{
+        padding-top: 10px;
+    }
+    @keyframes viola{
+        0%{
+            opacity:0;
+            transform: translateY(0);
+        }
+        5%{
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+        90%{
+            opacity: 1;
+            transform:translateY(0);
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(-50%);
+            
+        }
+    }
+    span{
+
+        animation:10s greespan linear;
+        animation-delay: 0.6s;
+    
+        @keyframes greespan{
+        0%{
+            width: 0px;
+        }
+        5%{
+            width: 0px;
+        }
+        90%{
+            width: 90%;
+        }
+        100%{
+            width: 90%;
+        }
+    }
+    }  
+}
+
+@media only screen and (max-width:410px){
+    .main{
+        width: 90%;
+    }
+}
+
