@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACYI,AAAA,YAAY,CAAU;EAClB,OAAO,EAFA,GAAe;CAGzB;;AAFD,AAAA,aAAa,CAAS;EAClB,OAAO,EAFA,IAAe;CAGzB;;AAFD,AAAA,aAAa,CAAS;EAClB,OAAO,EAFA,IAAe;CAGzB;;AAFD,AAAA,cAAc,CAAQ;EAClB,OAAO,EAFA,KAAe;CAGzB;;AAFD,AAAA,cAAc,CAAQ;EAClB,OAAO,EAFA,KAAe;CAGzB",
+    "sources": [
+        "../sass/spacing.scss",
+        "../sass/variables.scss"
+    ],
+    "names": [],
+    "file": "spacing.css"
+}

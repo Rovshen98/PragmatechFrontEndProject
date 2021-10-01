@@ -1,0 +1,70 @@
+// spacing
+$spacing-reset:0px;
+$spacing-x:5px;
+// padding
+$list:top,right,bottom,left;
+$pm:margin,padding;
+$direction:vertical,horizontal;
+@each $l in $list{
+    @each $i in $pm{
+    .#{$i}-#{$l}-reset{
+        #{$i}-#{$l}:$spacing-reset
+    }}
+}
+
+@each $i in $pm{
+    .#{$i}-general-reset{
+        #{$i}:$spacing-reset
+    }
+}
+
+
+// top, right,left, bottom-------------
+@for $n from 0 through 4{
+        $n:$n+1;
+        @each $t in $list{
+            @each $i in $pm{
+        .#{$i}-#{$t}-#{$n}x{
+            #{$i}-#{$t}:$spacing-x * $n ;
+        }}}
+}
+// --------------------------------------------
+// vertical---------------------------------
+@for $n from 0 through 4{
+    $n:$n+1;
+    
+       
+        @each $i in $pm{
+        .#{$i}-vertical-#{$n}x{
+            #{$i}:($spacing-x * $n) 0px;
+        }
+    }
+}
+// ------------------------------------------
+
+@for $n from 0 through 4{
+    $n:$n+1;
+    @each $i in $pm{
+        .#{$i}-horizontal-#{$n}x{
+            #{$i}:0px ($spacing-x * $n),;
+        }
+    }
+}
+
+@for $n from 0 through 4{
+    $n:$n+1;
+    @each $i in $pm{
+        .#{$i}-general-#{$n}x{
+            #{$i}:($spacing-x * $n),;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
