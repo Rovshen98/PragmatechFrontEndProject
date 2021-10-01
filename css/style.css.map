@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,MAAM,EAAC,CAAC;EACR,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,KAAK,CAAA;EACD,SAAS,EAAE,cAAe;CAS7B;;AARG,UAAU,CAAV,IAAU;EACN,EAAE;IACC,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI",
+    "sources": [
+        "../Extra/preloaders/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
