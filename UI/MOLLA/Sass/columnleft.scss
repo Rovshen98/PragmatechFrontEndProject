@@ -1,0 +1,22 @@
+@import "./components.scss";
+
+.main__left__sofas{
+    width:90%;
+    height: 410px !important;
+    padding:10% 4% 0 20%;
+    background-image: url("https://portotheme.com/html/molla/assets/images/demos/demo-14/banners/banner-11.jpg");
+    margin:20px 30px 0 10px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h1{
+        font-size: 20px;
+        color:white
+    }
+    h3{
+        font-size: 18px;
+        color: white;
+        font-weight: normal;
+    }
+}
