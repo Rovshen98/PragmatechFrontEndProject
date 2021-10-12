@@ -13,11 +13,15 @@ navbar.addEventListener("click", ()=>{
 
 // first slider/////////////////////////////////////////
 
-let config = {
-    type: 'carousel',
-    startAt: 0,
-    perView: 3,
-    gap:10,
-  };
-
-  new Glide('.glide',config).mount()
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:0,
+        items:3,
+        nav:true,
+        
+        
+        
+        
+    });
+  });

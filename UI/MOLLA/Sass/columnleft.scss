@@ -20,3 +20,64 @@
         font-weight: normal;
     }
 }
+
+.blog{
+    width: 98%;
+    height: 390px;
+    margin: 20px 30px 0 10px;
+    padding-right: 10%;
+    span{
+        font-size: 20px;
+        height: 40px;
+        display: inline-block;
+        border-bottom: 0.5px solid $color;
+    }
+    img{
+        margin-top: 20px;
+    }
+    p{
+        font-size: 14.5px;
+        color: grey;
+        padding-left: 5%;
+    }
+    .meta{
+        font-size: 17px;
+        color: black;
+        font-weight: bold;
+        margin: 10px 0; 
+        padding-left: 5%;
+    }
+    .readmore{
+        color: $color;
+        margin: 15px 0;
+        padding-left: 5%;
+        
+        
+        span{
+            font-size:16px;
+            height: 25px;
+            width: 40%;
+            border: none;
+            display: block;
+            &:hover{
+                cursor: pointer;
+                i{
+                opacity: 1;
+                display: inline-block;
+                transform:translateX(50%);
+                color:$color;
+                transition: 0.5s ease;}
+            }
+        }
+        i{
+            opacity: 0;
+            color: $color;
+            transform:translateX(0%);
+            width: 20px;
+            font-size: 14px;
+            
+
+        }
+        
+    }
+}
