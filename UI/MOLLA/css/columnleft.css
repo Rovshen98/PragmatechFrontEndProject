@@ -5,7 +5,9 @@ a {
 }
 
 .btn_shop {
-  position: relative;
+  position: absolute;
+  left: 10.5%;
+  bottom: 0%;
   border: none;
   width: 150px;
   height: 30px;
@@ -18,6 +20,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 7px 0 7px 0;
+  z-index: 100;
 }
 
 .btn_shop p {
@@ -62,6 +65,7 @@ a {
 }
 
 .btn-cart {
+  position: relative;
   width: 85%;
   height: 40px;
   background-color: #fcb941;
@@ -226,7 +230,6 @@ a {
 
 .swiper-slide__product__media {
   width: 85%;
-  margin-left: 15%;
   height: 170px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,6 +265,10 @@ a {
   font-size: 15px;
   font-weight: normal;
   text-align: center;
+}
+
+.swiper-slide__product__body h5:hover {
+  color: #fcb941;
 }
 
 .swiper-slide__product__body .dollar {
@@ -352,6 +359,30 @@ h2 {
           flex-direction: column;
   color: white;
   position: relative;
+  background-color: black;
+}
+
+.fourth_bem > * {
+  z-index: 2;
+}
+
+.fourth_bem::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.fourth_bem:hover::after {
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .fourth_bem h2 {
@@ -392,7 +423,12 @@ h2 {
   margin: 15px 0;
 }
 
+.ml15 {
+  margin-left: 13%;
+}
+
 .main__left__sofas {
+  position: relative;
   width: 90%;
   height: 410px !important;
   padding: 10% 4% 0 20%;
@@ -411,6 +447,32 @@ h2 {
           align-items: flex-end;
 }
 
+.main__left__sofas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.main__left__sofas:hover {
+  cursor: pointer;
+}
+
+.main__left__sofas:hover::after {
+  opacity: 0.3;
+}
+
+.main__left__sofas > * {
+  z-index: 2;
+}
+
 .main__left__sofas h1 {
   font-size: 20px;
   color: white;
@@ -422,31 +484,38 @@ h2 {
   font-weight: normal;
 }
 
-.blog {
+.main__left__sofas .btn_shop {
+  top: 20%;
+  right: 4%;
+  left: unset;
+  bottom: unset;
+}
+
+.post {
   width: 98%;
   height: 390px;
   margin: 20px 30px 0 10px;
   padding-right: 10%;
 }
 
-.blog span {
+.post span {
   font-size: 20px;
   height: 40px;
   display: inline-block;
   border-bottom: 0.5px solid #fcb941;
 }
 
-.blog img {
+.post img {
   margin-top: 20px;
 }
 
-.blog p {
+.post p {
   font-size: 14.5px;
   color: grey;
   padding-left: 5%;
 }
 
-.blog .meta {
+.post .meta {
   font-size: 17px;
   color: black;
   font-weight: bold;
@@ -454,13 +523,13 @@ h2 {
   padding-left: 5%;
 }
 
-.blog .readmore {
+.post .readmore {
   color: #fcb941;
   margin: 15px 0;
   padding-left: 5%;
 }
 
-.blog .readmore span {
+.post .readmore span {
   font-size: 16px;
   height: 25px;
   width: 40%;
@@ -468,11 +537,11 @@ h2 {
   display: block;
 }
 
-.blog .readmore span:hover {
+.post .readmore span:hover {
   cursor: pointer;
 }
 
-.blog .readmore span:hover i {
+.post .readmore span:hover i {
   opacity: 1;
   display: inline-block;
   -webkit-transform: translateX(50%);
@@ -482,7 +551,7 @@ h2 {
   transition: 0.5s ease;
 }
 
-.blog .readmore i {
+.post .readmore i {
   opacity: 0;
   color: #fcb941;
   -webkit-transform: translateX(0%);

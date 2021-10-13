@@ -11,6 +11,7 @@
 
 body{
     overflow-x: hidden;
+
 }
 
 .info{
@@ -295,6 +296,10 @@ body{
 }
 .toogle__active{
     visibility: hidden !important;
+}
+
+.toogle{
+    visibility:visible !important;
 }
 
 .navbar{

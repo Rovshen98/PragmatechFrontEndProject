@@ -2,7 +2,7 @@ let header_drop = document.querySelector(".dropdown")
 let header_select = document.querySelector(".header__search__option")
 
 header_select.addEventListener("click", ()=>{
-    header_drop.classList.toggle("toogle__active")
+    header_drop.classList.toggle("toogle")
 })
 
 let navbar = document.querySelector(".navbar__categories")

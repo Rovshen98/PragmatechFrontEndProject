@@ -5,7 +5,9 @@ a {
 }
 
 .btn_shop {
-  position: relative;
+  position: absolute;
+  left: 10.5%;
+  bottom: 0%;
   border: none;
   width: 150px;
   height: 30px;
@@ -18,6 +20,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 7px 0 7px 0;
+  z-index: 100;
 }
 
 .btn_shop p {
@@ -62,6 +65,7 @@ a {
 }
 
 .btn-cart {
+  position: relative;
   width: 85%;
   height: 40px;
   background-color: #fcb941;
@@ -226,7 +230,6 @@ a {
 
 .swiper-slide__product__media {
   width: 85%;
-  margin-left: 15%;
   height: 170px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,6 +265,10 @@ a {
   font-size: 15px;
   font-weight: normal;
   text-align: center;
+}
+
+.swiper-slide__product__body h5:hover {
+  color: #fcb941;
 }
 
 .swiper-slide__product__body .dollar {
@@ -352,6 +359,30 @@ h2 {
           flex-direction: column;
   color: white;
   position: relative;
+  background-color: black;
+}
+
+.fourth_bem > * {
+  z-index: 2;
+}
+
+.fourth_bem::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.fourth_bem:hover::after {
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .fourth_bem h2 {
@@ -390,4 +421,8 @@ h2 {
 
 .h155 .btn_shop {
   margin: 15px 0;
+}
+
+.ml15 {
+  margin-left: 13%;
 }
