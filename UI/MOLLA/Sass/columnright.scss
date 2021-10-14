@@ -133,4 +133,38 @@
     }
 }
 
+.iconbox{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin: 100px 0 0 0;
+    i{
+        font-size: 2rem;
+        margin-right: 15px;
+        background-color:white;
+        color:#333 !important;
+    }
+    &__icon{
+        width: 23%;
+        margin:15px;
+        display: flex;
+        margin-right: 2%;
+
+        .icons{
+            display: flex;
+            flex-direction: column;
+        h3{
+            color:#333 !important;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 15px;
+            color: grey;
+        }
+    }
+        
+    }
+}
+
 

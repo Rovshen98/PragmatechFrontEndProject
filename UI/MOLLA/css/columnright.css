@@ -230,7 +230,6 @@ a {
 
 .swiper-slide__product__media {
   width: 85%;
-  margin-left: 15%;
   height: 170px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,6 +265,10 @@ a {
   font-size: 15px;
   font-weight: normal;
   text-align: center;
+}
+
+.swiper-slide__product__body h5:hover {
+  color: #fcb941;
 }
 
 .swiper-slide__product__body .dollar {
@@ -418,6 +421,10 @@ h2 {
 
 .h155 .btn_shop {
   margin: 15px 0;
+}
+
+.ml15 {
+  margin-left: 13%;
 }
 
 .main__right__detax {
@@ -575,4 +582,52 @@ h2 {
 .fslider .glide {
   width: 75%;
   position: relative;
+}
+
+.iconbox {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0 0 0;
+}
+
+.iconbox i {
+  font-size: 2rem;
+  margin-right: 15px;
+  background-color: white;
+  color: #333 !important;
+}
+
+.iconbox__icon {
+  width: 23%;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2%;
+}
+
+.iconbox__icon .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.iconbox__icon .icons h3 {
+  color: #333 !important;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.iconbox__icon .icons p {
+  font-size: 15px;
+  color: grey;
 }

@@ -1,4 +1,3 @@
-
 @import "../Sass/columnright.scss";
 @import "../Sass/columnleft.scss";
 
@@ -148,7 +147,12 @@ body{
 
     }
 }
-
+.logo{
+    width: 105px;
+    height: 24px;
+    background-image: url(https://portotheme.com/html/molla/assets/images/demos/demo-14/logo.png);
+    background-repeat: no-repeat;
+}
 .header{
     width: 100%;
     height: 87px;
@@ -159,11 +163,7 @@ body{
     cursor: pointer;
     z-index: 50;
     
-    .logo{
-        width: 105px;
-        height: 24px;
-        background-image: url(https://portotheme.com/html/molla/assets/images/demos/demo-14/logo.png);
-    }
+   
     form{
         width: 50%;
         z-index: 1;
@@ -410,6 +410,7 @@ body{
         width: 100%;
         height: 1;
         list-style: none;
+        z-index: 5;
         li{
             width: 100%;
             margin-top: 10px;
@@ -845,3 +846,194 @@ body{
     }
 }
 
+.footer_subscribe{
+    width: 100%;
+    height: 130px;
+    background-color:#333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+    &__left{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        h3{
+            color: $color;
+
+        }
+        p{
+            color: grey;
+        }
+    }
+    &__right{
+        width: 45%;
+        display: flex;
+        align-items:  center;
+        height: 32%;
+        form{
+            width: 100%;
+            height: 100%;
+           input{
+            border: none;
+            outline:none;
+            width: 50%;
+            height: 100%;
+            padding: 2%;
+            border-radius: 4px;
+           }
+           button{
+               width: 30%;
+               height: 100%;
+               border: none;
+               outline: none;
+               background-color: rgba(255, 255, 255, 0.2);
+               padding: 2%;
+               color: white;
+               border-radius:4px;
+               &:hover{
+                   background-color: $color;
+                   cursor: pointer;
+                   transition: 0.5s;
+               }
+           }
+    }
+    }
+}
+
+.big__footer{
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    &__info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+        p{
+            font-size: 14px;
+            color: #777;
+            line-height: 20px;
+            margin-top: 30px;
+            width: 90%;
+        }
+        .widget{
+            display: flex;
+            margin-top: 20px;
+            &__contact{
+                display: flex;
+                flex-direction: column;
+                a{
+                    text-decoration: none;
+                    color: $color;
+                    font-size: 17px;
+                }
+            }
+            &__title{
+                font-size: 13.5px;
+                color: #333333;
+                margin-bottom: 10px;
+            }
+
+            &__info{
+                padding:0 5%;
+                img{
+                    width: 260px;
+                }
+            }
+        }
+    }
+}
+.info-text{
+    padding-right: 1%;
+    ul{
+        list-style: none;
+        margin: 20px 0;
+        
+        li{
+            margin:10px 0;
+            color: #777;
+            font-size: 14px;
+        }
+    }
+    p{
+        margin: 20px 0;
+        color: #777;
+        font-size: 15px;
+    }
+  form{
+      width: 100%;
+      display: flex;
+    input{
+        border:0.5px solid #dadada;;
+        height: 47px;
+        width:78%;
+        padding: 5%;
+        ::placeholder{
+            color:#dadada ;
+        }
+    }
+    button{
+        width:21%;
+        height: 47px;
+        background-color: #333;
+        outline: none;
+        border: none;
+        i{
+            color: white;
+            font-size: 15px;
+        }
+        &:hover{
+            background-color: $color;
+            transition: 0.5s;
+
+        }
+
+    }
+    }
+}
+
+footer{
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    margin:0 0.5%;
+    border-top: 0.5px solid #dadada;
+
+    p{
+        font-size: 16px;
+        color:#777;
+    }
+    .social-media{
+        display: flex;
+        p{
+            margin-right: 10px;
+            font-size: 15px;
+        }
+    }
+}
+.fa{
+   
+    &-facebook-f{
+        color: #8f79ed;
+    }
+    &-twitter{
+        color: #79c8ed;
+    }
+    &-instagram{
+        color: #dd6d9a;
+    }
+    &-youtube{
+        color: #e66262;;
+    }
+
+    &-pinterest-p{
+        color: #e66262;
+    }
+}
+.fab{
+    font-size: 13px;
+    margin: 0 10px;
+}
