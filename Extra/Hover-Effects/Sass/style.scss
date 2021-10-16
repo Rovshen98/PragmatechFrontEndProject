@@ -265,3 +265,85 @@ body{
         
     }
 }
+
+// btn_4---------------------------------------
+.btn_4{
+    span:nth-child(1){
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        transition: transform 0.5s;
+        transform: scaleY(0);
+        transform-origin: top;
+    
+        background-color: rgb(206, 40, 206);
+    }
+    span:nth-child(2){
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+        
+        background-color: rgb(206, 40, 206);
+    }
+    span:nth-child(3){
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        transition: transform 0.5s;
+        transform: scaleY(0);
+        transform-origin:bottom;
+        
+        background-color: rgb(206, 40, 206);
+    }
+    span:nth-child(4){
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        transition: transform 0.5s;
+        transform-origin:left;
+        transform: scaleX(0);
+        
+        background-color: rgb(206, 40, 206);
+    }
+}
+
+.btn_4:hover{
+    span:nth-child(1){
+        transform: scaleY(1);
+        
+        transform-origin: bottom;
+        transition:transform 0.5s;
+    }
+    span:nth-child(2){
+        transform: scaleX(1);
+        
+        transform-origin: left;
+        
+        transition:transform 0.5s ;
+    }
+    span:nth-child(3){
+        transform: scaleY(1);
+        
+        transform-origin: top;
+        
+        transition: transform 0.5s linear;
+    }
+    span:nth-child(4){
+        transform: scaleX(1);
+        
+        transform-origin: right;
+        
+        transition: transform 0.5s;
+    }
+}
