@@ -1,0 +1,123 @@
+.btn {
+  width: 200px;
+  height: 56px;
+  border: 1.4px solid #458FF6;
+  border-radius: 55px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn_white {
+  background-color: white;
+}
+
+.btn_white p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 60px;
+  color: #458FF6;
+}
+
+.btn_white:hover {
+  background-color: #458FF6;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn_white:hover p {
+  color: white;
+}
+
+.dots {
+  position: absolute;
+  width: 71.03px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dots .dot {
+  width: 10.46px;
+  cursor: pointer;
+  margin: 7.40px 5px;
+  height: 10.42px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#97C3F9), to(#93C1F9));
+  background-image: linear-gradient(#97C3F9, #93C1F9);
+}
+
+.trafalgar__text {
+  width: 481px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trafalgar__text h1 {
+  width: 481px;
+  height: 112px;
+  font-weight: bold;
+  line-height: 56px;
+  font-size: 36px;
+}
+
+.trafalgar__text span {
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 26px 0 31px 0;
+}
+
+.trafalgar__text > p {
+  width: 450px;
+  height: 120px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987;
+  margin-bottom: 40px;
+}
+
+.ws {
+  width: 254px !important;
+  height: 96px  !important;
+}
+
+.mt {
+  margin-top: 229px  !important;
+  padding-top: 0 !important;
+}
+
+.mt span {
+  margin-top: 30px !important;
+}

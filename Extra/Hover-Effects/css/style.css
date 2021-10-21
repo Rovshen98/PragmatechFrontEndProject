@@ -370,7 +370,7 @@ body {
           transform: scaleY(0);
   -webkit-transform-origin: top;
           transform-origin: top;
-  background-color: #ce28ce;
+  background-color: #62f13e;
 }
 
 .btn_4 span:nth-child(2) {
@@ -387,7 +387,7 @@ body {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  background-color: #ce28ce;
+  background-color: #62f13e;
 }
 
 .btn_4 span:nth-child(3) {
@@ -404,7 +404,7 @@ body {
           transform: scaleY(0);
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  background-color: #ce28ce;
+  background-color: #62f13e;
 }
 
 .btn_4 span:nth-child(4) {
@@ -421,7 +421,7 @@ body {
           transform-origin: left;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  background-color: #ce28ce;
+  background-color: #62f13e;
 }
 
 .btn_4:hover span:nth-child(1) {
@@ -466,4 +466,147 @@ body {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.btn_5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: ellipse(78% 55% at 20% 51%);
+          clip-path: ellipse(78% 55% at 20% 51%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  opacity: 0;
+  z-index: -5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(red));
+  background-image: linear-gradient(blue, red);
+}
+
+.btn_5:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(red));
+  background-image: linear-gradient(blue, red);
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-animation: clip 0.7s ease;
+          animation: clip 0.7s ease;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  z-index: -5;
+  color: black;
+  opacity: 1;
+}
+
+@-webkit-keyframes clip {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-clip-path: ellipse(78% 55% at 20% 51%);
+            clip-path: ellipse(78% 55% at 20% 51%);
+  }
+  50% {
+    -webkit-clip-path: ellipse(78% 55% at 20% 51%);
+            clip-path: ellipse(78% 55% at 20% 51%);
+    -webkit-transition: -webkit-clip-path 0.3s linear;
+    transition: -webkit-clip-path 0.3s linear;
+    transition: clip-path 0.3s linear;
+    transition: clip-path 0.3s linear, -webkit-clip-path 0.3s linear;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-clip-path: ellipse(100% 100% at 70% 70%);
+            clip-path: ellipse(100% 100% at 70% 70%);
+    -webkit-transition: -webkit-clip-path 0.3s linear;
+    transition: -webkit-clip-path 0.3s linear;
+    transition: clip-path 0.3s linear;
+    transition: clip-path 0.3s linear, -webkit-clip-path 0.3s linear;
+  }
+}
+
+@keyframes clip {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-clip-path: ellipse(78% 55% at 20% 51%);
+            clip-path: ellipse(78% 55% at 20% 51%);
+  }
+  50% {
+    -webkit-clip-path: ellipse(78% 55% at 20% 51%);
+            clip-path: ellipse(78% 55% at 20% 51%);
+    -webkit-transition: -webkit-clip-path 0.3s linear;
+    transition: -webkit-clip-path 0.3s linear;
+    transition: clip-path 0.3s linear;
+    transition: clip-path 0.3s linear, -webkit-clip-path 0.3s linear;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-clip-path: ellipse(100% 100% at 70% 70%);
+            clip-path: ellipse(100% 100% at 70% 70%);
+    -webkit-transition: -webkit-clip-path 0.3s linear;
+    transition: -webkit-clip-path 0.3s linear;
+    transition: clip-path 0.3s linear;
+    transition: clip-path 0.3s linear, -webkit-clip-path 0.3s linear;
+  }
+}
+
+.btn_6::before, .btn_6::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00c3ff;
+  -webkit-clip-path: circle(9.4% at 0 0);
+          clip-path: circle(9.4% at 0 0);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
+  z-index: -5;
+}
+
+.btn_6::after {
+  -webkit-clip-path: circle(9.4% at 100% 0);
+          clip-path: circle(9.4% at 100% 0);
+}
+
+.btn_6:hover::before, .btn_6:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(146deg, #00c3ff -5%, #ffff1c);
+  -webkit-clip-path: circle(40.3% at 1% 7%);
+          clip-path: circle(40.3% at 1% 7%);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
+}
+
+.btn_6:hover::after {
+  -webkit-clip-path: circle(40.3% at 100% 7%);
+          clip-path: circle(40.3% at 100% 7%);
+  background-image: linear-gradient(212deg, #00c3ff -5%, #ffff1c);
 }

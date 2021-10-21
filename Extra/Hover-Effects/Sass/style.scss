@@ -278,7 +278,7 @@ body{
         transform: scaleY(0);
         transform-origin: top;
     
-        background-color: rgb(206, 40, 206);
+        background-color: rgb(98, 241, 62);
     }
     span:nth-child(2){
         position:absolute;
@@ -290,7 +290,7 @@ body{
         transform: scaleX(0);
         transform-origin: right;
         
-        background-color: rgb(206, 40, 206);
+        background-color: rgb(98, 241, 62);
     }
     span:nth-child(3){
         position:absolute;
@@ -302,7 +302,7 @@ body{
         transform: scaleY(0);
         transform-origin:bottom;
         
-        background-color: rgb(206, 40, 206);
+        background-color: rgb(98, 241, 62);
     }
     span:nth-child(4){
         position:absolute;
@@ -314,7 +314,7 @@ body{
         transform-origin:left;
         transform: scaleX(0);
         
-        background-color: rgb(206, 40, 206);
+        background-color: rgb(98, 241, 62);
     }
 }
 
@@ -346,4 +346,101 @@ body{
         
         transition: transform 0.5s;
     }
+}
+// btn_5------------------------------
+
+.btn_5{
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: ellipse(78% 55% at 20% 51%);
+        transition: transform 1s;
+        transform-origin: right;
+        opacity: 0;
+        z-index:-5;
+        background-image:linear-gradient(blue,red)  ;
+    }
+
+    &:hover{
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:linear-gradient(blue,red);
+            clip-path: inset(0 0 0 0);
+            transition: transform 0.5s;
+            animation: clip 0.7s ease;
+            transform-origin:left;
+            z-index:-5;
+            color: black;
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes clip{
+    0%{
+        transform: scaleX(0);
+        clip-path: ellipse(78% 55% at 20% 51%);
+    }
+    50%{
+        
+        clip-path: ellipse(78% 55% at 20% 51%);
+        transition: clip-path 0.3s linear;
+    }
+    100%{
+        transform: scaleX(1);
+        clip-path: ellipse(100% 100% at 70% 70%);
+        transition: clip-path 0.3s linear;
+        
+    }
+}
+
+// btn_6==================
+.btn_6{
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00c3ff;
+        clip-path: circle(9.4% at 0 0);
+        transition: clip-path 1s; 
+         z-index: -5;}
+
+        &::after{
+            clip-path: circle(9.4% at 100% 0);
+        }
+
+        &:hover{
+            &::before,&::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(146deg, #00c3ff -5%,
+                    #ffff1c );
+                clip-path: circle(40.3% at 1% 7%);
+                transition: clip-path 1s;
+                
+            }
+        
+                &::after{
+                    clip-path: circle(40.3% at 100% 7%);
+                    background-image: linear-gradient(212deg, #00c3ff -5%,
+                    #ffff1c );
+                }
+        
+        }
 }
