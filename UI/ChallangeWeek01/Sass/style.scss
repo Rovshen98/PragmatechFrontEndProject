@@ -19,22 +19,22 @@ body{
 // header----------------
 header{
     width: 100%;
-    height: 153px;
+    height: 9.5625rem;
     display: flex;
-    padding-left: 191px;
-    padding-right: 192px;
+    padding-left: 11.9375rem;
+    padding-right: 12rem;
     align-items: center;
     
     .logo{
         width: max-content;
-        height: 41px;
+        height: 2.5625rem;
         display: flex;
         align-items: center;
-        margin-right: 512px;
+        margin-right: 32rem;
         cursor: pointer;
         &__round{
-            width: 41px;
-            height: 41px;
+            width: 2.5625rem;
+            height: 2.5625rem;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -42,18 +42,18 @@ header{
             background-color: $color;
             color: white;
             font-weight:Bold;
-            font-size: 26px;
-            padding: 2px 13px 0 13px;
+            font-size: 1.625rem;
+            padding: 0.125rem 0.8125rem 0 0.8125rem;
             
         }
         &__text{
-            width: 107px;
-            height: 30px;
+            width: 6.6875rem;
+            height: 1.875rem;
             font-weight: 700;
-            font-size: 24px;
-            line-height: 30.12px;
+            font-size: 1.5rem;
+            line-height: 1.8825rem;
             color: #233348;
-            margin-left: 12px;
+            margin-left: 0.75rem;
             
         }
 
@@ -62,25 +62,31 @@ header{
     .menu{
         width: max-content;
         height: max-content;
-        &__active{
-            font-size: 18px;
+        &__active a{
+            font-size:1.125rem;
             opacity: 1 !important;
             color: #1F1534;
-            line-height: 23px;
+            line-height: 1.4375rem;
             font-weight: bold;
         }
         ul{
-            width:545px;
+            width:34.0625rem;
             height: inherit;
             list-style: none;
             display: flex;
             justify-content: space-between;
             li{
-                font-size: 18px;
+                position: relative;
+                width: max-content;
+                height: max-content;
+                a{
+                font-size: 1.125rem;
                 opacity: 50%;
                 color: #1F1534;
-                line-height: 23px;
+                line-height: 1.4375rem;
                 position: relative;
+                text-decoration: none;
+                }
                 span{
                     position: absolute;
                     width: 100%;
@@ -91,6 +97,7 @@ header{
                     transform: scaleX(0);
                     transition: transform 0.5s;
                     transform-origin: right;
+                    opacity: 150%;
                 }
 
                 &:hover {
@@ -110,31 +117,31 @@ header{
 // virtual-----------------------------------
 .virtual{
     width: 100%;
-    height: 598px;
+    height: 37.375rem;
     height: max-content;
     display: flex;
-    padding:24px 163px 0 190px;
+    padding:1.5rem 10.1875rem 0 11.875rem;
     align-items: center;
     position: relative;
     &__text{
-        width: 445px;
+        width: 27.8125rem;
         height: max-content;
         h1{
-            width: 427px;
-            height: 112px;
+            width: 26.6875rem;
+            height:7rem;
             font-weight: bold;
-            font-size: 48px;
-            line-height: 56px;
+            font-size: 3rem;
+            line-height: 3.5rem;
             color: black;
             cursor: pointer;
         }
         >p{
-            width: 445px;
-            height: 96px;
-            font-size: 21px;
-            line-height: 32px;
+            width: 27.8125rem;
+            height: 6rem;
+            font-size: 1.3125rem;
+            line-height: 2rem;
             color: #7D7987;
-            margin-top: 25px;
+            margin-top:1.5625rem;
             
         }
 
@@ -143,33 +150,34 @@ header{
             display: flex;
             justify-content: center;
             background-color: $color;
-            margin-top: 48px;
+            margin-top: 3rem;
             &:hover{
                 cursor: pointer;
                 background-color: $color-dark;
             }
             p{
                 height: inherit;
-                width: 120px;
+                width: 7.5rem;
                 font-weight: bold;
-                font-size: 16.5px;
-                line-height: 60px;
+                font-size: 1rem;
+                line-height: 3.75rem;
                 color: white;
                 display: flex;
-                align-items:center;
+                align-content:center;
             }
         }
     }
 
     &__picture{
-        width: 693px;
-        height: 598px;
-        margin-left: 109px;
+        width: 43.312rem;
+        height: 37.375rem;
+        margin-left: 6.812rem;
+        background-size: cover;
         background-image: url("/img/trafalgar-header\ illustration\ 1.jpg");
     }
 
     .dots{
-        top: 18px;
+        top: 1.125rem;
         left: 0;
     }
 
@@ -181,123 +189,128 @@ header{
     height: max-content;
     display: flex;
     flex-direction: column;
-    margin-top: 192px;
+    margin-top: 12rem;
     &__text{
-        width: 952px;
+        width: 59.5rem;
         height: max-content;
-        margin-left: 323px;
+        margin-left: 20.187rem;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         h1{
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: bold;
-            line-height: 56px;
+            line-height: 3.5rem;
         }
         span{
             display: inline-block;
-            width: 56px;
+            width: 3.5rem;
             height: 2px;
             background-color: black;
             border-radius: 5px;
-            margin-top: 26px;
+            margin-top: 1.625rem;
         }
         p{
-            width: 952px;
-            height: 60px;
-            font-weight: 300px;
-            font-size: 18px;
-            line-height: 30px;
+            width:59.5rem;
+            height: 3.75rem;
+            font-weight: 18.75rem;
+            font-size: 1.125rem;
+            line-height:1.875rem;
             text-align: center;
             color: #7D7987;
-            margin-top: 33px;
+            margin-top:2.0625rem;
         }
     }
 
     &__items{
-        width: 1120px;
+        width:70rem;
         height: max-content;
         display: flex;
         justify-content:space-between ;
         align-items: space-between;
         flex-wrap: wrap;
-        margin-left: 240px;
-        margin-top: 80px;
+        margin-left:15rem;
+        margin-top: 5rem;
         position: relative;
         .dots{
-            width: 121.60px !important;
+            width: 7.6rem !important;
             top:36.2%;
             right: -4%;
             z-index: -5;
         }
         .vector{
+            width: 47.8125rem;
+            height: 38.6875rem;
             position: absolute;
-            top: -40px;
-            left: -240px;
+            top: -2.5rem;
+            left: -15rem;
             z-index: -5;
         }
         &__item{
-            width: 350px;
-            height: 354px;
+            width: 21.875rem;
+            height: 22.125rem;
             border-radius: 20px;
-            box-shadow:10px 40px 50px 0px rgba(229, 233, 246, 0.4);  
+            box-shadow:0.63rem 2.5rem 3.125rem 0px rgba(229, 233, 246, 0.4);  
             background-color: white;
-            margin-bottom: 37px;
-            padding-left: 39px;
+            margin-bottom:2.312rem;
+            padding-left: 2.437rem;
             
             h2{
                 width: max-content;
-                height: 56px;
+                height: 3.5rem;
                 font-weight: bold;
-                font-size: 24px;
-                line-height: 56px;
+                font-size: 1.5rem;
+                line-height:3.5rem;
             }
             p{
-                width: 266px;
-                height: 84px;
-                font-size: 16px;
-                line-height: 28px;
+                width: 16.625rem;
+                height: 5.25rem;
+                font-size: 1rem;
+                line-height: 1.75rem;
                 color: #7D7987;
+                text-align: start;
             }
         }
 
         .img1{
-            margin-bottom: 22.4px;
-            margin-top: 54px;
+            width: 5.74875rem;
+            height: 5.625rem;
+            margin-bottom: 1.4rem;
+            margin-top: 3.375rem;
         }
         .img2{
-            width: 61.86;
-            height: 81.67px;
-            margin-bottom: 19.41px;
-            margin-top: 62.37px;
+            width: 3.87rem;
+            height: 5.316rem;
+            margin-bottom: 1.213rem;
+            margin-top:3.89rem;
         }
         .img3{
-            width: 59px;
-            height: 79.23px;
-            margin-bottom: 24.4px;
-            margin-top: 51.1px;
+            width: 3.69rem;
+            height: 5.938rem;
+            margin-bottom: 1.525rem;
+            margin-top: 3.19375rem;
         }
         .img4{
-            width: 59.86px;
-            height: 82.73px;
-            margin-bottom: 30.38px;
-            margin-top: 53.3px;
+            width: 3.741rem;
+            height: 5.170rem;
+            margin-bottom: 1.899rem;
+            margin-top: 3.331rem;
         }
         .img5{
-            width: 71.4px;
-            height: 68.52px;
-            margin-bottom: 36.3px;
-            margin-top: 59px;
+            width: 5.170rem;
+            height: 4.282rem;
+            margin-bottom: 2.268rem;
+            margin-top: 3.6875rem;
         }
         .img6{
-            width: 69.42px;
-            height: 95.02px;
-            margin-bottom: 19.39px;
-            margin-top: 52px;
+            width: 4.338rem;
+            height: 5.94rem;
+            margin-bottom: 1.211rem;
+            margin-top: 3.25rem;
         }
     }
     .btn{
-        margin-left: 700px;
+        margin-left: 43.75rem;
     }
 }
 
@@ -308,86 +321,93 @@ header{
     height: max-content;
     display: flex;
     align-items: center;
-    padding: 220px 0 0 135px;
+    padding: 13.75rem 0 0 8.4375rem;
     position: relative;
+    &__pic{
+        width: 40.625rem;
+        height: 29.8125rem;
+        background-size: cover;
+    }
     .trafalgar__text{
-        margin-left: 142px;
+        margin-left: 8.875rem;
     }
     i{
-        margin-left: 14.79px;
+        margin-left: 0.9243rem;
     }
     .dots{
         right: 0;
-        top: -241px;
+        top: -15.0625rem;
         z-index: 999999;
     }
 }
 // ////////////////////////////
 // testimponial//////////////////@
 .testimonial{
-    width: 1120px;
-    height: 425px;
+    width: 70rem;
+    height: 26.5625rem;
     border-radius: 24px;
     background-image: linear-gradient(#67C3F3,#5A98F2);
-    margin: 266px 0 0 242px;
-    padding:64px 118px 89px 118px;
+    margin: 16.625rem 0 0 15.125rem;
+    padding:4rem 7.375rem 5.5625rem 7.375rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     &__head{
-        width: 522px;
+        width: 32.625rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         h1{
-            width: 522px;
-            height: 48px;
+            width: 32.625rem;
+            height: 3rem;
             font-weight: bold;
-            font-size: 36px;
-            line-height: 48px;
+            font-size: 2.25rem;
+            line-height: 3rem;
             color: #FFFFFF;
         }
         span{
-            width: 56px;
+            width: 3.5rem;
             height: 2px;
             border-radius: 6px;
             background-color: #FFFFFF;
-            margin-top: 25px;
+            margin-top: 1.5625rem;
         }
     }
     &__main{
         display: flex;
         width: 100%;
         justify-content: space-between;
-        margin-top: 66px;
+        margin-top: 4.125rem;
         &__author{
             display:flex;
             justify-content: space-between;
-            width: 354px;
+            width: 22.125rem;
             height: max-content;
             img{
+                width:8.8125rem ;
+                height: 8.8125rem;
                 border-radius: 50%;
-                margin-right: 29px;
+                margin-right: 1.8125rem;
             }
             &__state{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 h2{
-                    width: 184px;
-                    height: 48px;
+                    width: 11.5rem;
+                    height: 3rem;
                     font-weight: bold;
-                    font-size: 22px;
-                    line-height: 48px;
+                    font-size: 1.375rem;
+                    line-height:3rem;
                     color: #FFFFFF;
-                    margin-bottom: -10px;
+                    margin-bottom: -0.625rem;
                 }
                 p{
-                    width: 119px;
-                    height: 48px;
-                    font-size: 18px;
-                    line-height: 48px;
+                    width: 7.4375rem;
+                    height: 3rem;
+                    font-size: 1.125rem;
+                    line-height: 3rem;
                     color: rgba(255, 255, 255, 0.85);
                     
                     
@@ -395,25 +415,25 @@ header{
             }
         }
         &__text{
-            width: 420px;
-            height: 120px;
-            font-size: 19px;
-            line-height: 30px;
+            width: 26.25rem;
+            height: 7.5rem;
+            font-size: 1.1875rem;
+            line-height: 1.875rem;
             color: rgba(255, 255, 255, 0.9);
         }
     }
 
     .pagination{
-        width: 334px;
+        width: 20.875rem;
         height: max-content;
         position: absolute;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        bottom: -47px;
+        bottom: -2.9375rem;
         .dots{
             position: static;
-            width: 94px;
+            width: 5.875rem;
             display: flex;
             justify-content: space-around;
             margin: 0;
@@ -426,8 +446,8 @@ header{
         i{
             display:inline-block;
             
-            font-size:26px;
-            padding-bottom: 5px;
+            font-size:1.625rem;
+            padding-bottom: 0.3125rem;
             &:nth-child(1){
                 color: lighten($color: $color, $amount:15%);
             }
@@ -453,32 +473,32 @@ header{
 // ///////////////////////////////
 //ARTICLES-------------------------------
 .articles{
-    width: calc(100% - 191px);
-    height: 810px;
+    width: calc(100% - 11.9375rem);
+    height: 50.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 278px;
-    margin-left: 191px;
+    margin-top: 17.375rem;
+    margin-left: 11.9375rem;
     position: relative;
     h1{
-        width: 462px;
-        height: 56px;
+        width: 28.875rem;
+        height: 3.5rem;
         font-weight: bold;
-        font-size: 35px;
-        line-height: 56px;
+        font-size:2.1875rem;
+        line-height: 3.5rem;
         color: #000000;
-        margin-top: 6px;
+        margin-top:0.375rem;
         margin-right: 20%;
     }
     >span{
         display: inline-block;
-        width: 56px;
+        width:3.5rem;
         height: 2px;
         background-color: black;
         border-radius: 5px;
-        margin-top: 26px;
-        margin-bottom: 72px;
+        margin-top: 1.625rem;
+        margin-bottom: 4.5rem;
         margin-right: 20%;
     }
     .articles__wrapper{
@@ -486,61 +506,68 @@ header{
         height: max-content;
         display: flex;
         &__item{
-            width: 350px;
-            height: 512px;
-            box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
-            border-radius: 20px;
+            width: 21.875rem;
+            height: 32rem;
+            box-shadow: 0.625rem 2.5rem 3.125rem 0px rgba(229, 233, 246, 0.4);
+            border-radius: 1.25rem;
             overflow: hidden;
-            margin-right: 34px;
+            margin-right: 2.125rem;
             background-color: white;
+            img{
+                width: 23.0625rem;
+                height: 15.375rem;
+                background-size: cover;
+            }
         
         }
         &__text{
-            padding-left: 33px;
+            padding-left: 2.0625rem;
             h3{
-                width: 251px;
-                height: 64px;
+                width: 15.6875rem;
+                height: 4rem;
                 font-weight: bold;
-                font-size: 21px;
-                line-height: 32px;
+                font-size: 1.3125rem;
+                line-height: 2rem;
                 color: #000000;
-                margin-top: 25px;
+                margin-top:1.5625rem;
             }
             p{
-                width: 266px;
-                height: 84px;
-                font-size: 16px;
-                line-height: 28px;
+                width: 16.625rem;
+                height: 5.25rem;
+                font-size: 1rem;
+                line-height: 1.75rem;
                 color: #7D7987;
-                margin-top: 12px;
+                margin-top: 0.75rem;
             }
             span{
-                width: 266px;
-                height: 28px;
-                font-size: 17px;
-                line-height: 28px;
+                width: 16.625rem;
+                height: 1.75rem;
+                font-size: 1.0625rem;
+                line-height: 1.75rem;
                 color: $color;
                 display: flex;
-                margin-top: 25px;
+                margin-top: 1.5625rem;
                 align-items: center;
                 cursor: pointer;
                 i{
-                    margin-left: 15px;
-                    padding-top: 2px;
+                    margin-left: 0.9375rem;
+                    padding-top: 0.125rem;
                 }
             }
         }
     }
     .btn{
         margin-right: 20%;
-        margin-top: 72px;
+        margin-top: 4.5rem;
         p{
-            font-size: 18px;
-            line-height: 60px;
+            font-size: 1.125rem;
+            line-height: 3.75rem;
         }
     }
     // //
     .vector_2{
+        width: 29.875rem;
+        height: 32.25rem;
         position: absolute;
         top: 10%;
         right: 0;
@@ -549,7 +576,7 @@ header{
 
     .dots{
         
-            width: 121.60px !important;
+            width:7.6rem !important;
             top:14%;
             left: -3.5%;
             z-index: -5;
@@ -562,29 +589,29 @@ header{
 // footer/////////////////////
 .footer{
     width: 100%;
-    height: 432px;
+    height: 27rem;
     background-image: linear-gradient(#67C3F3,
     #5A98F2);
-    padding: 118px 214px 113px 190px;
+    padding: 7.375rem 13.375rem 7.0625rem 11.875rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 201px;
+    margin-top: 12.5625rem;
     position: relative;
     &__text{
-        width: 391px;
-        height: 201px;
+        width: 24.4375rem;
+        height: 12.5625rem;
         display: flex;
         flex-direction: column;
         .logo{
             width: max-content;
-            height: 41px;
+            height: 2.5625rem;
             display: flex;
             align-items: center;
-            margin-right: 512px;
+            margin-right: 32rem;
             cursor: pointer;
             &__round{
-                width: 41px;
-                height: 41px;
+                width: 2.5625rem;
+                height: 2.5625rem;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -592,40 +619,40 @@ header{
                 background-color: #FFFFFF;
                 color: $color;
                 font-weight:Bold;
-                font-size: 26px;
-                padding: 2px 13px 0 13px;
+                font-size: 1.625rem;
+                padding: 0.125rem 0.8125rem 0 0.8125rem;
                 
             }
             &__text{
-                width: 107px;
-                height: 30px;
+                width: 6.6875rem;
+                height: 1.875rem;
                 font-weight: 700;
-                font-size: 24px;
-                line-height: 30.12px;
+                font-size: 1.5rem;
+                line-height: 1.8825rem;
                 color:#FFFFFF;
-                margin-left: 12px;
+                margin-left: 0.75rem;
                 
             }
     
         }
 
         h4{
-            width: 391px;
-            height: 84px;
-            font-size: 18px;
-            line-height: 28px;
+            width: 24.4375rem;
+            height: 5.25rem;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
             color: #FFFFFF;
-            margin-top: 17px;
+            margin-top: 1.0625rem;
             font-weight: lighter;
         }
 
         p{
-            width: 391px;
-            height: 28px;
+            width: 24.4375rem;
+            height: 1.75rem;
             color: #FFFFFF;
-            font-size: 16px;
-            line-height: 28px;
-            margin-top: 31px;
+            font-size: 1rem;
+            line-height: 1.75rem;
+            margin-top: 1.9375rem;
         }
     }
 
@@ -634,22 +661,22 @@ header{
         flex-direction: column;
         
         h3{
-            width: 92px;
-            height: 60px;
+            width: 5.75rem;
+            height: 3.75rem;
             color: #FFFFFF;
-            font-size: 20px;
-            line-height: 60px;
+            font-size: 1.25rem;
+            line-height: 3.75rem;
             font-weight: bold;
         }
         ul{
             list-style: none;
             display: flex;
             flex-direction: column;
-            height: 152px;
+            height: 9.5rem;
             width: max-content;
             li{
-                font-size: 18px;
-                line-height: 38px;
+                font-size: 1.125rem;
+                line-height: 2.375rem;
                 color: #FFFFFF;
                 font-weight: lighter;
             }
@@ -663,9 +690,15 @@ header{
     }
 
     .dots__left{
-        width: 101px;
+        width: 6.3125rem;
         
         bottom: 1%;
         left: 0.5%;
+    }
+}
+
+@media only screen and (max-width:1600px){
+    html{
+        font-size: 1vw;
     }
 }

@@ -1,6 +1,6 @@
 .btn {
-  width: 200px;
-  height: 56px;
+  width: 12.5rem;
+  height: 3.5rem;
   border: 1.4px solid #458FF6;
   border-radius: 55px;
   background-color: white;
@@ -24,8 +24,8 @@
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 60px;
+  font-size: 1rem;
+  line-height: 3.75rem;
   color: #458FF6;
 }
 
@@ -42,7 +42,7 @@
 
 .dots {
   position: absolute;
-  width: 71.03px;
+  width: 4.4393rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -59,17 +59,18 @@
 }
 
 .dots .dot {
-  width: 10.46px;
+  width: 0.65375rem;
+  opacity: 0.5;
   cursor: pointer;
-  margin: 7.40px 5px;
-  height: 10.42px;
+  margin: 0.4625rem 0.3125rem;
+  height: 0.65125rem;
   border-radius: 50%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#97C3F9), to(#93C1F9));
   background-image: linear-gradient(#97C3F9, #93C1F9);
 }
 
 .trafalgar__text {
-  width: 481px;
+  width: 30.0625rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -83,41 +84,46 @@
 }
 
 .trafalgar__text h1 {
-  width: 481px;
-  height: 112px;
+  width: 30.0625rem;
+  height: 7rem;
   font-weight: bold;
-  line-height: 56px;
-  font-size: 36px;
+  line-height: 3.5rem;
+  font-size: 2.25rem;
 }
 
 .trafalgar__text span {
   display: inline-block;
-  width: 56px;
+  width: 3.5rem;
   height: 2px;
   background-color: black;
-  border-radius: 10px;
-  margin: 26px 0 31px 0;
+  border-radius: 0.625rem;
+  margin: 1.625rem 0 1.9375rem 0;
 }
 
 .trafalgar__text > p {
-  width: 450px;
-  height: 120px;
-  font-size: 18px;
-  line-height: 30px;
+  width: 28.125rem;
+  height: 7.5rem;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   color: #7D7987;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.h3_2 {
+  width: 16.5625rem !important;
+  height: 4rem !important;
 }
 
 .ws {
-  width: 254px !important;
-  height: 96px  !important;
+  width: 15.875rem !important;
+  height: 6rem !important;
 }
 
 .mt {
-  margin-top: 229px  !important;
+  margin-top: 14.3125rem  !important;
   padding-top: 0 !important;
 }
 
 .mt span {
-  margin-top: 30px !important;
+  margin-top: 1.875rem !important;
 }
