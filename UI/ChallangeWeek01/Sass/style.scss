@@ -1,5 +1,5 @@
 @import "../Sass/components.scss";
-
+@import "./responsive.scss";
 
 *{
     margin: 0;
@@ -58,7 +58,12 @@ header{
         }
 
     }
-
+.fa-bars{
+    display: none;
+}
+.fa-times{
+    display: none;
+}
     .menu{
         width: max-content;
         height: max-content;
@@ -156,14 +161,15 @@ header{
                 background-color: $color-dark;
             }
             p{
-                height: inherit;
-                width: 7.5rem;
+                height: 100%;
+                width: 100%;
                 font-weight: bold;
                 font-size: 1rem;
                 line-height: 3.75rem;
                 color: white;
                 display: flex;
-                align-content:center;
+                align-items:center;
+                justify-content: center;
             }
         }
     }
@@ -173,7 +179,7 @@ header{
         height: 37.375rem;
         margin-left: 6.812rem;
         background-size: cover;
-        background-image: url("/img/trafalgar-header\ illustration\ 1.jpg");
+        background-image: url("../img/trafalgar-header\ illustration\ 1.jpg");
     }
 
     .dots{
@@ -310,7 +316,7 @@ header{
         }
     }
     .btn{
-        margin-left: 43.75rem;
+        margin-left: 44%;
     }
 }
 
@@ -597,6 +603,9 @@ header{
     justify-content: space-between;
     margin-top: 12.5625rem;
     position: relative;
+    .flex{
+        display: flex;
+    }
     &__text{
         width: 24.4375rem;
         height: 12.5625rem;
@@ -697,8 +706,5 @@ header{
     }
 }
 
-@media only screen and (max-width:1600px){
-    html{
-        font-size: 1vw;
-    }
-}
+
+
