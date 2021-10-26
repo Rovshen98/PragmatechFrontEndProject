@@ -1,4 +1,11 @@
-.container {
-  background-color: aqua;
-  height: 800px;
+.row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row div {
+  max-width: 400px;
+  height: calc(200px + 5vw);
+  min-width: 300px;
+  margin: 10px;
 }
