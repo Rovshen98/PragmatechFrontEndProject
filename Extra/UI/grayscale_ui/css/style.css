@@ -1,11 +1,8 @@
-.row {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.row div {
+  height: calc(200px + 5vw);
 }
 
-.row div {
-  max-width: 400px;
-  height: calc(200px + 5vw);
-  min-width: 300px;
-  margin: 10px;
+.row img {
+  width: 300px;
+  height: 400px;
 }
