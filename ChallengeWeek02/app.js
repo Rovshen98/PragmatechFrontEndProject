@@ -25,9 +25,7 @@ var color = ["#c2ff3d","#3dc2ff","#04e022","#bc83e6","#ebb328","red","aqua"];
 var x = 1
 
 
-main.addEventListener("click", ()=>{
-    console.log("koko")
-});
+
 
 
 
@@ -65,8 +63,9 @@ input.addEventListener("keyup", function(event) {
         div.style.margin= "5px";
         div.style.padding= "10px 15px";
         div.style.zIndex = x;
-        text.style.fontSize="1.5rem"
-        text.style.height= "100%"
+        text.style.fontSize="1.5rem";
+        text.style.height= "100%";
+        text.style.zIndex= -1;
         main.appendChild(div);
         div.appendChild(text);
 
@@ -76,6 +75,24 @@ input.addEventListener("keyup", function(event) {
 
 });
 
+var y = document.querySelector(".item")
+function hiden(event){
+
+        
+    if(event.target.tagName == "H1" ){
+     event.target.parentElement.style.display="none";
+           
+    }
+    else if(event.target.className == "item" ){
+        
+        event.target.style.display="none";
+              
+       };
+    
+}
+        
+
+main.addEventListener('dblclick', hiden, false);
 
 
 

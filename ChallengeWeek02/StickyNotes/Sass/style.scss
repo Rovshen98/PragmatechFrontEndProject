@@ -96,10 +96,16 @@ header{
         flex-wrap: wrap;
         padding-top: 10px;
         margin:0 10%;
-        div{
-            width: 276px;
-            height: 276px;
+        h1{
+            position: relative;
         }
     }
 
 // ------------------------------------------
+@media only screen and (max-width:769px){
+    .container{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px !important;
+    }
+}
