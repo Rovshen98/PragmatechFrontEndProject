@@ -3,38 +3,208 @@
   padding: 0;
 }
 
-main {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: scroll;
+html {
+  scroll-behavior: smooth;
 }
 
-main .slider {
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1900px;
-  height: 100%;
+  width: 100%;
   position: relative;
+  height: 100vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-main .slider .item {
-  position: relative;
-  width: 250px;
-  height: 400px;
-  margin: 0 10px;
-  background-color: brown;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-
-main .slider .item .it {
-  width: 150px;
-  height: 200px;
-  background-color: aqua;
+.main .frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 30%;
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.main .frame h1 {
+  color: black;
+  font-size: 6vw;
+  font-weight: bolder;
+}
+
+.main .frame h5 {
+  color: grey;
+  font-size: 1.5vw;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  overflow: scroll;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 9999999;
+}
+
+.container .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 40vw;
+}
+
+.container .numbers h1 {
+  margin: 0 75px;
+  font-size: 40px;
+  font-weight: bold;
+  color: grey;
+}
+
+.container .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 9999999;
+}
+
+.container .items .titleleft {
+  width: 40vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .items .titleleft ul {
+  list-style: none;
+}
+
+.container .items .titleleft ul li {
+  font-size: 11vw;
+  color: #837e7d;
+  font-family: 'Ribeye Marrow', cursive;
+}
+
+.container .items .titleleft__body {
+  margin-left: 70px;
+}
+
+.container .items .titleright {
+  width: 40vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .items .titleright ul {
+  list-style: none;
+}
+
+.container .items .titleright ul li {
+  color: #837e7d;
+  font-family: 'Ribeye Marrow', cursive;
+}
+
+.container .items .titleright__main {
+  font-size: 11vw;
+}
+
+.container .items .titleright__body {
+  margin-left: 50px;
+  font-size: 9vw;
+}
+
+.item {
+  width: 200px;
+  height: 350px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.item h1 {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.item img {
+  width: inherit;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cursor {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #b61010;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+          transform: translate(calc(-50% + 15px), -50%);
 }

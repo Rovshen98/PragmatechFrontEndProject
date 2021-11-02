@@ -16,5 +16,6 @@ document.body.addEventListener('click',(e)=> {
         main.style.display="none";
         main.style.opacity="0"
       
-      });}      
+      });
+    }      
 })
