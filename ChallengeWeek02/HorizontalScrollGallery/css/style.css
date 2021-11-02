@@ -43,7 +43,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 30%;
+  height: 25%;
   position: absolute;
   top: 0;
   left: 0;
@@ -76,6 +76,7 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   z-index: 9999999;
+  scroll-behavior: smooth;
 }
 
 .container .numbers {
@@ -84,15 +85,19 @@ body {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 35%;
+  top: 40vh;
   left: 40vw;
 }
 
 .container .numbers h1 {
-  margin: 0 75px;
-  font-size: 40px;
+  margin: 0 83px;
+  font-size: 43px;
   font-weight: bold;
   color: grey;
+}
+
+.container .numbers h1:last-child {
+  margin: 0 110px;
 }
 
 .container .items {
@@ -166,7 +171,7 @@ body {
 }
 
 .item {
-  width: 200px;
+  width: 250px;
   height: 350px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
@@ -178,13 +183,8 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 0 -15px;
   position: relative;
-}
-
-.item h1 {
-  position: absolute;
-  top: 0;
-  left: 40%;
 }
 
 .item img {
@@ -207,4 +207,69 @@ body {
   top: 0;
   -webkit-transform: translate(calc(-50% + 15px), -50%);
           transform: translate(calc(-50% + 15px), -50%);
+}
+
+@media only screen and (min-device-width: 1400px) {
+  .container .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+  }
+  .container .numbers h1 {
+    margin: 0 6.5vw;
+    font-size: 43px;
+    font-weight: bold;
+    color: grey;
+  }
+  .container .numbers h1:last-child {
+    margin: 0 10vw;
+  }
+  .item {
+    width: 18.5vw;
+  }
+  .item img {
+    height: 19vw;
+  }
+}
+
+@media only screen and (min-device-width: 1600px) {
+  .container .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+  }
+  .container .numbers h1 {
+    margin: 0 6.5vw;
+    font-size: 43px;
+    font-weight: bold;
+    color: grey;
+  }
+  .container .numbers h1:last-child {
+    margin: 0 10vw;
+  }
+  .item {
+    width: 18vw;
+  }
+  .item img {
+    height: 21vw;
+  }
+}
+
+@media only screen and (min-device-width: 1770px) {
+  .container .numbers {
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+  }
+  .container .numbers h1 {
+    margin: 0 6.8vw;
+  }
 }

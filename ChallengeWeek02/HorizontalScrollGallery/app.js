@@ -2,7 +2,7 @@
 const mouseWheel = document.querySelector('.container');
 
 mouseWheel.addEventListener('wheel', function(e) {
-    const race = 50; // How many pixels to scroll
+    const race = 150; // How many pixels to scroll
 
     if (e.deltaY > 0) // Scroll right
         mouseWheel.scrollLeft += race;
@@ -20,6 +20,32 @@ let img = document.querySelectorAll("img")
 let itemCount=document.querySelectorAll('.item').length
 let wbody=window.innerWidth;
 
+function reset(){
+    let w=window.innerWidth/2;
+    mouseWheel.style.width=`${wbody*3}px`;
+    for(i=0;i<itemCount;i++){
+        var rectright = (item[i].getBoundingClientRect().left-w)/w;
+        var rectleft = (item[i].getBoundingClientRect().left/w);
+        
+        if(rectright > -(0.2) && rectright<0.7){
+            item[i].style.transform = `scale(${.8 - rectright})`;
+            
+         }
+         else if(rectleft< 0.8  && rectleft>0.15){
+            item[i].style.transform = `scale(${rectleft })`
+            
+            
+         }
+        
+         else{
+             item[i].style.transform = 'scale(0.1)'
+         }
+        
+    }
+
+    
+    
+};
 
 
 function scrollFest(){
