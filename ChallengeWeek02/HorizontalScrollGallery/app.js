@@ -20,9 +20,9 @@ let img = document.querySelectorAll("img")
 let itemCount=document.querySelectorAll('.item').length
 let wbody=window.innerWidth;
 
-function reset(){
+function scroll(){
     let w=window.innerWidth/2;
-    mouseWheel.style.width=`${wbody*3}px`;
+    mouseWheel.style.width=`${wbody*3.5}px`;
     for(i=0;i<itemCount;i++){
         var rectright = (item[i].getBoundingClientRect().left-w)/w;
         var rectleft = (item[i].getBoundingClientRect().left/w);
@@ -43,6 +43,10 @@ function reset(){
         
     }
 
+}
+
+function reset(){
+    scroll()
     
     
 };
@@ -50,27 +54,7 @@ function reset(){
 
 function scrollFest(){
     
-    let w=window.innerWidth/2;
-    mouseWheel.style.width=`${wbody*3}px`;
-    for(i=0;i<itemCount;i++){
-        var rectright = (item[i].getBoundingClientRect().left-w)/w;
-        var rectleft = (item[i].getBoundingClientRect().left/w);
-        
-        if(rectright > -(0.2) && rectright<0.7){
-            item[i].style.transform = `scale(${.8 - rectright})`;
-            
-         }
-         else if(rectleft< 0.8  && rectleft>0.15){
-            item[i].style.transform = `scale(${rectleft })`
-            
-            
-         }
-        
-         else{
-             item[i].style.transform = 'scale(0.1)'
-         }
-        
-    }
+    scroll()
 
     
     

@@ -85,7 +85,7 @@ body {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 40vh;
+  top: 25vh;
   left: 40vw;
 }
 
@@ -207,6 +207,140 @@ body {
   top: 0;
   -webkit-transform: translate(calc(-50% + 15px), -50%);
           transform: translate(calc(-50% + 15px), -50%);
+  z-index: 99999999;
+}
+
+@media only screen and (max-device-width: 556px) {
+  .main .frame h1 {
+    font-size: 10vw;
+  }
+  .main .frame h5 {
+    font-size: 5vw;
+  }
+  .container {
+    height: 100%;
+  }
+  .container .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 70% !important;
+    left: 40vw;
+  }
+  .container .numbers h1 {
+    font-size: 43px;
+    font-weight: bold;
+    color: grey;
+    margin: 0 54px;
+  }
+  .container .numbers h1:last-child {
+    margin: 0 60px;
+  }
+  .container .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    z-index: 9999999;
+  }
+  .container .items .titleleft {
+    width: 40vw;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container .items .titleleft ul {
+    list-style: none;
+  }
+  .container .items .titleleft ul li {
+    font-size: 13vw;
+    color: #837e7d;
+    font-family: 'Ribeye Marrow', cursive;
+  }
+  .container .items .titleleft__body {
+    margin-left: 0;
+  }
+  .container .items .titleright {
+    width: 40vw;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container .items .titleright ul {
+    list-style: none;
+  }
+  .container .items .titleright ul li {
+    color: #837e7d;
+    font-family: 'Ribeye Marrow', cursive;
+  }
+  .container .items .titleright__main {
+    font-size: 13vw;
+  }
+  .container .items .titleright__body {
+    margin-left: 50px;
+    font-size: 11vw;
+  }
+  .item {
+    width: 150px !important;
+    margin: 0 5px;
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+  .item img {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-device-width: 882px) and (min-device-width: 557px) {
+  .main .frame h1 {
+    font-size: 8vw;
+  }
+  .main .frame h5 {
+    font-size: 3vw;
+  }
+  .container .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+  }
+  .container .numbers h1 {
+    font-size: 43px;
+    font-weight: bold;
+    color: grey;
+    margin: 0 70px;
+  }
+  .container .numbers h1:last-child {
+    margin: 0 100px;
+  }
+  .item {
+    width: 230px;
+    margin: 0 -20px;
+  }
+  .item img {
+    height: 270px;
+  }
 }
 
 @media only screen and (min-device-width: 1400px) {
@@ -236,7 +370,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 1600px) {
+@media only screen and (min-device-width: 1600px) and (max-device-width: 1769px) {
   .container .numbers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,13 +397,40 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 1770px) {
+@media only screen and (min-device-width: 1770px) and (max-device-width: 2099px) {
   .container .numbers {
     position: absolute;
     top: 50vh;
     left: 40vw;
   }
   .container .numbers h1 {
-    margin: 0 6.8vw;
+    margin: 0 7vw;
+  }
+}
+
+@media only screen and (min-device-width: 2100px) {
+  .container .numbers {
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+  }
+  .container .numbers h1 {
+    margin: 0 7.5vw !important;
+  }
+}
+
+@media only screen and (min-device-height: 650px) {
+  .container .numbers {
+    position: absolute;
+    top: 45%;
+    left: 40vw;
+  }
+}
+
+@media only screen and (min-device-height: 800px) {
+  .container .numbers {
+    position: absolute;
+    top: 50%;
+    left: 40vw;
   }
 }
