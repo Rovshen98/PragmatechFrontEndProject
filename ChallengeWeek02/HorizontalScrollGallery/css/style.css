@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   position: relative;
   font-family: 'Architects Daughter', cursive;
+  background-color: #dedede;
 }
 
 .main {
@@ -322,11 +323,11 @@ body {
     display: flex;
     width: 100%;
     position: absolute;
-    top: 30vh;
+    top: 20vh;
     left: 40vw;
   }
   .container .numbers h1 {
-    font-size: 43px;
+    font-size: 40px;
     font-weight: bold;
     color: grey;
     margin: 0 70px;
@@ -419,10 +420,18 @@ body {
   }
 }
 
+@media only screen and (min-device-height: 300px) and (max-device-width: 649px) {
+  .container .numbers {
+    position: absolute;
+    top: 35% !important;
+    left: 40vw;
+  }
+}
+
 @media only screen and (min-device-height: 650px) {
   .container .numbers {
     position: absolute;
-    top: 45%;
+    top: 39%;
     left: 40vw;
   }
 }
