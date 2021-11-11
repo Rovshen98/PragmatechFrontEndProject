@@ -16,7 +16,7 @@ mouseWheel.addEventListener('wheel', function(e) {
 let main = document.querySelector(".main")
 
 let item=document.querySelectorAll('.item')
-let img = document.querySelectorAll("img")
+let img =document.querySelectorAll("img")
 let itemCount=document.querySelectorAll('.item').length
 let wbody=window.innerWidth;
 

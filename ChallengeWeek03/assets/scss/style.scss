@@ -1,0 +1,261 @@
+@import "./variables.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Screenshotbg.png);
+    background-repeat: repeat;
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+}
+.container{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// home#######################################
+.home{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(280px + 20vw);
+    height:90%;
+    
+    h1{
+        font-size: calc(19px + 2.8vw);
+        color:$colorblack;
+    }
+
+    .btn{
+        width: calc(140px + 0.1vw);
+        height: calc(15px + 1vw);
+        background-color:$colorblue;
+        color: white;
+        font-size: calc(14px + .3vw);
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-left:4%;
+        padding-right: 15%;
+        margin: 10px 0;
+        div{
+        
+                width: 30%;
+                height: inherit;
+                position: absolute;
+                top:0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorbluedark;
+            
+        }
+       
+        
+
+    }
+
+    p{
+        color: $colorblack;
+    }
+}
+
+// ##########################################
+// gameover################333
+
+    .gameover{
+        width: 250px;
+        height: 250px;
+        background-color: $colorgrey;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .head{
+            font-size:calc(18px + 1vw);
+            font-weight: 600;
+            color: white;
+        }
+        .score{
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            p{
+                font-size: calc(12px + 1vw);
+                color: white;
+            }
+            .lastscore{
+                font-size: calc(11px + 1vw);
+                color: white;
+            }
+        }
+
+        .buttons{
+            width: 90%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .btn{
+                width: 48%;
+                height:85%;
+                background-color:$colorblue;
+                color: white;
+                font-size: calc(14px + .3vw);
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding-left:4%;
+                padding-right: 15%;
+                margin: 10px 0;
+                div{
+        
+                    width: 30%;
+                    height: 100%;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $colorbluedark;
+                
+            }
+           
+            
+        }
+
+    }
+    }
+
+    // main###
+        .main{
+            width: 290px;
+            height: 90%;
+            background-color:#ecf0f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            &__scores{
+                width: 95%;
+                height: 40px;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                .score__btn{
+                    width: 47%;
+                    height: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: $colorblack;
+                    color: white;
+                    border-radius: 3px;
+                    padding-bottom: 3px;
+                    p{  
+                        width: 60%;
+                        display: flex;
+                        justify-content: space-between;
+                       
+                        
+                        i{
+                            font-size: 9px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+
+
+            .fast__progress{
+                width: 85%;
+                height: 10px;
+                background-color: $colorgrey;
+                border-radius: 5px;
+                position: relative;
+                top: -5%;
+                .x_bar{
+                    position: absolute;
+                    top: -3px;
+                    left: -11px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+
+                    background-color: $colorblack;
+                }
+                
+            }
+
+            .question{
+                width: 70%;
+                height:15%;
+                text-align: center;
+                color: $colorblack;
+                font-weight: 700;
+            }
+
+            .progress{
+                width: 90%;
+                height: 8px;
+                background-color: $colorgrey;
+                border-radius: 5px;
+                position: relative;
+                top: 5%;
+                overflow: hidden;
+                margin-top: 13px;
+                &__bar{
+                    
+                    height: inherit;
+                    background-color: $colorblack;
+                    transition:1s linear;
+                }
+            }
+            
+            .options{
+                width: 95%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                .option{
+                    width: 100%;
+                    height: 22%;
+                    background-color: $colorblue;
+                    border-radius: 5px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $colorbluedark;
+                    }
+
+                }
+            }
+        }
+
+    // ###
