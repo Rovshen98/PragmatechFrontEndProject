@@ -353,3 +353,11 @@ body {
   cursor: pointer;
   background-color: #3190d0;
 }
+
+.green {
+  background-color: #27c027 !important;
+}
+
+.red {
+  background-color: red !important;
+}
