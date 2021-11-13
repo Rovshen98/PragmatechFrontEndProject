@@ -176,8 +176,9 @@ let questions = [
     main.style.display="none";
     gameover.style.display="none"
     btn.addEventListener("click",()=>{
-        questionIndex=0
+        
         startGame()
+        
     })
 
 };
@@ -342,6 +343,7 @@ function upscore(){
                 progress__bar.style.width="100%"
                 scoretext.innerText=0
                 clearInterval(count)
+                
                 opengameoverpage()
             }
            
