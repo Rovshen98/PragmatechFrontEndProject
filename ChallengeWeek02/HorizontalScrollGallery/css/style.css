@@ -123,6 +123,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 1;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
