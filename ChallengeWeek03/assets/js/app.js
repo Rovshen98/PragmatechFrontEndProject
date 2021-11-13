@@ -5,12 +5,18 @@ let main = document.querySelector(".main");
 let choices = document.querySelectorAll("#choice");
 let question = document.querySelector(".question");
 let progress__bar = document.querySelector(".progress__bar");
+let bonusbar =document.querySelector(".fast__progress__bar")
 let butn1 = document.querySelector(".butn1")
 let butn2 = document.querySelector(".butn2")
 let butn3 = document.querySelector(".butn3")
 let butn4 = document.querySelector(".butn4")
 let scoretext = document.querySelector(".scoretext")
-
+let lastscore= document.querySelector(".lastscore")
+var btn1 = document.querySelector(".btn1")
+var btn2 = document.querySelector(".btn2")
+let btn =document.querySelector(".btn")
+let fas  = document.querySelectorAll(".fa-circle")
+var scored = 0
 class Question{
     constructor(text,options,answer){
             this.text = text;
@@ -142,13 +148,14 @@ let questions = [
    // timerin teyin olunmasi
  function progress(){
     let totaltime = 41
-    localStorage.setItem("plus",totaltime)
+    
     
    var x =  setInterval(() => {
         totaltime-=1
         let progress__bar__width= totaltime*2.5
         
         
+       
         if(totaltime==-1){
             clearInterval(x);
 
@@ -157,20 +164,25 @@ let questions = [
         progress__bar.style.width = `${progress__bar__width}%`
 
     }, 1000);
-
+        localStorage.setItem("count",x)
     }
+
+   
+    
 
     // home page  acilsin
  function openhomepage(){
     home.style.display="flex";
     main.style.display="none";
     gameover.style.display="none"
+    btn.addEventListener("click",()=>{
+        questionIndex=0
+        startGame()
+    })
+
 };
 
-function pluscountdown(){
-    var totaltime = localStorage.getItem("plus")
-    totaltime=totaltime+5
-}
+
 
 
 // gameoverpage acilsin
@@ -178,28 +190,41 @@ function opengameoverpage(){
    home.style.display="none";
    main.style.display="none";
    gameover.style.display="flex"
+   var score = localStorage.getItem("score")
+   lastscore.innerHTML = score
+   btn1.addEventListener("click",()=>{
+    var count= localStorage.getItem("count")
+    progress__bar.style.width="100%"
+    scoretext.innerText=0
+    clearInterval(count)
+       openhomepage()
+   })
+   btn2.addEventListener("click",()=>{
+    var count= localStorage.getItem("count")
+    progress__bar.style.width="100%"
+    scoretext.innerText=0
+    clearInterval(count)
+    questionIndex=0
+    startGame()
+})
+
    
 };
 var questionIndex
+questionIndex=0
 startGame =()=>{
+    fas[4].style.color= "white"
+    fas[3].style.color= "white"
+    fas[2].style.color= "white"
+    fas[1].style.color= "white"
     home.style.display="none";
     main.style.display="flex";
     gameover.style.display="none";
     progress();
-    questionIndex=0
-    
-    
-    
-    geto()
-    getqe()
-    
+    changecolor()
+    setquestion()
     
    
-
-
-    
-
-
 };
 
 
@@ -207,35 +232,35 @@ startGame =()=>{
 
    
 
-function getqe(){
-   
+function setquestion(){
         question.innerHTML = questions[questionIndex].text 
         butn1.innerHTML= questions[questionIndex].options[0] 
         butn2.innerHTML= questions[questionIndex].options[1]
         butn3.innerHTML= questions[questionIndex].options[2]
         butn4.innerHTML= questions[questionIndex].options[3] 
-       
-        
-        
-        
+              
 }
 
 
 
 var scored = 0
-   function geto(){
-    
+
+   function changecolor(){
+
         var True
         choices.forEach(choice => {
         choice.addEventListener("click", (e)=>{
         var buton= e.target
         var selectedAnswer= e.target.textContent
+        
         if(selectedAnswer==questions[questionIndex].answer){
                 True = 1
                 upscore()
+                
                 localStorage.setItem("truevalue", True);
                 buton.classList.add("green")
-                pluscountdown()
+                
+               
                 
         }else{
             True = 0
@@ -243,9 +268,12 @@ var scored = 0
         }
         
             questionIndex++
+           
+            console.log(questionIndex)
+            
         
         setTimeout(function(){
-            getqe()
+            setquestion()
         },600)
         function clearclass(){
             setTimeout(function(){
@@ -260,7 +288,15 @@ var scored = 0
     
        
     })
-});}
+});
+if(questionIndex==10){
+    questionIndex=0
+    console.log(questionIndex)
+}
+}
+
+
+
 
 
 
@@ -270,24 +306,59 @@ function upscore(){
         scored+=5
         localStorage.setItem("score", scored);
     }
-    scoretext.innerHTML=scored
+    scoretext.innerHTML= scored
     }
+    var lifebalance = 5
+    choices.forEach(choice => {
+        choice.addEventListener("click", (e)=>{
+            
+       
+        var selectedAnswer= e.target.textContent
+        if(selectedAnswer!=questions[questionIndex].answer){
+            if(lifebalance==0){
+                lifebalance=5
+            }
+           lifebalance--
+           if(lifebalance==4){
+               fas[4].style.color= "grey"
+           }
+           else if(lifebalance==3){
+            fas[4].style.color= "grey"
+            fas[3].style.color= "grey"
+        }
+            else if(lifebalance==2){
+            fas[4].style.color= "grey"
+            fas[3].style.color= "grey"
+            fas[2].style.color= "grey"
+            }
+            else if(lifebalance==1){
+                fas[4].style.color= "grey"
+                fas[3].style.color= "grey"
+                fas[2].style.color= "grey"
+                fas[1].style.color= "grey"
+                }
+            else if(lifebalance==0){
+                var count= localStorage.getItem("count")
+                progress__bar.style.width="100%"
+                scoretext.innerText=0
+                clearInterval(count)
+                opengameoverpage()
+            }
+           
+        }
+        })
+    
+    })
 
 
-
-startGame()
+openhomepage()
 
   
    
    
 
     
-// scorun teyin olunmasi
-function Score(){
-    var score=localStorage.getItem("score")
-    console.log(score)
 
-}
 
 
 

@@ -195,6 +195,17 @@ body{
                 border-radius: 5px;
                 position: relative;
                 top: -5%;
+                
+                
+                &__bar{
+                    background-color:$colorblack !important;
+                    width: 100%;
+                    display: none;
+                    height: 100%;
+                    transition: 1s;
+                    transform-origin: right;
+                    border-radius: 5px;
+                }
                 .x_bar{
                     position: absolute;
                     top: -3px;
