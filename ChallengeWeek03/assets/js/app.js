@@ -269,8 +269,8 @@ var scored = 0
         }
         
             questionIndex++
-           
-            console.log(questionIndex)
+           console.log(questionIndex)
+            
             
         
         setTimeout(function(){
@@ -289,6 +289,7 @@ var scored = 0
     
        
     })
+    console.log(changecolor())
 });
 if(questionIndex==10){
     questionIndex=0
