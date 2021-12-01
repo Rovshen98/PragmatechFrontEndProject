@@ -1,16 +1,31 @@
-.row{
+*{
+    margin: 0;
+    padding: 0;
     
-    div{
-        
-        height: calc(200px + 5vw);
-        
-       
-        
-        
-        
-    }
-   img{
-       width: 300px;
-       height: 400px;
-   }
+}
+nav{
+    min-height: 3.5rem;
+    padding-bottom:0 !important;
+    padding-top:0 !important;
+    
+}
+.navbar-brand{
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 700;
+}
+.nav-link{
+    padding: 2rem 1.5rem !important;
+    color: rgba(255, 255, 255, 0.5);
+}
+.masthead{
+    position: relative;
+    width: 100%;
+    min-height: 35rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%),url('../img/bg-masthead.jpg');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
 }
