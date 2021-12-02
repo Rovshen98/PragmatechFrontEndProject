@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  letter-spacing: 0.0625em;
+}
+
 nav {
   min-height: 3.5rem;
   padding-bottom: 0 !important;
@@ -16,11 +20,14 @@ nav {
 
 .nav-link {
   padding: 2rem 1.5rem !important;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.nav-link:hover {
+  color: white !important;
 }
 
 .masthead {
-  position: relative;
   width: 100%;
   min-height: 35rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(75%, rgba(0, 0, 0, 0.7)), to(#000)), url("../img/bg-masthead.jpg");
@@ -29,4 +36,33 @@ nav {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.masthead__f {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.masthead__f h1 {
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.masthead__f h2 {
+  max-width: 30rem;
+  font-size: 1.25rem;
 }
