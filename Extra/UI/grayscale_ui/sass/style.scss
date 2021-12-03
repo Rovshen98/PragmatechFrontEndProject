@@ -33,13 +33,13 @@ nav{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-   &__f{
-       min-height: 100%;
+   &__section{
+       min-height: 35rem;
        display: flex;
        justify-content: center;
        align-items: center;
        h1{
-        font-size: 6.5rem;
+        font-size: 7rem;
         line-height: 6.5rem;
         letter-spacing: 0.8rem;
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
@@ -50,6 +50,16 @@ nav{
         h2{
             max-width: 30rem;
             font-size: 1.25rem;
+        }
+        a{
+            background-color: #64a19d;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 100%;
+            letter-spacing: 0.15rem;
+            &:hover{
+                background-color: #588d89;
+            }
         }
    }
 

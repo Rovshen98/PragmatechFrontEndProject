@@ -38,8 +38,8 @@ nav {
   background-size: cover;
 }
 
-.masthead__f {
-  min-height: 100%;
+.masthead__section {
+  min-height: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,8 +51,8 @@ nav {
           align-items: center;
 }
 
-.masthead__f h1 {
-  font-size: 6.5rem;
+.masthead__section h1 {
+  font-size: 7rem;
   line-height: 6.5rem;
   letter-spacing: 0.8rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
@@ -62,7 +62,19 @@ nav {
   background-clip: text;
 }
 
-.masthead__f h2 {
+.masthead__section h2 {
   max-width: 30rem;
   font-size: 1.25rem;
+}
+
+.masthead__section a {
+  background-color: #64a19d;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 100%;
+  letter-spacing: 0.15rem;
+}
+
+.masthead__section a:hover {
+  background-color: #588d89;
 }
