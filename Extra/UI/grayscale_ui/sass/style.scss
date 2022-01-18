@@ -5,7 +5,8 @@
 }
 
 body{
-    letter-spacing: 0.0625em
+    letter-spacing: 0.0625em;
+    font-family: fantasy;
 }
 nav{
     min-height: 3.5rem;
@@ -63,4 +64,15 @@ nav{
         }
    }
 
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+    a{
+        color: #64a19d;
+        &:hover{
+            color: #588d89;
+        }
+    }
 }

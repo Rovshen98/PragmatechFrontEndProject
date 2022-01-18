@@ -5,6 +5,7 @@
 
 body {
   letter-spacing: 0.0625em;
+  font-family: fantasy;
 }
 
 nav {
@@ -77,4 +78,18 @@ nav {
 
 .masthead__section a:hover {
   background-color: #588d89;
+}
+
+.about-section {
+  padding-top: 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(75%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about-section a {
+  color: #64a19d;
+}
+
+.about-section a:hover {
+  color: #588d89;
 }

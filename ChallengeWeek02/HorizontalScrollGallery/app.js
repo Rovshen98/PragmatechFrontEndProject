@@ -13,7 +13,7 @@ mouseWheel.addEventListener('wheel', function(e) {
             behavior: 'smooth'
         });
 });
-let main = document.querySelector(".main")
+let main = document.querySelector(".main");
 
 let item=document.querySelectorAll('.item')
 let img =document.querySelectorAll("img")
