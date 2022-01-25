@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ADA996;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#EAEAEA), color-stop(#DBDBDB), color-stop(#F2F2F2), to(#ADA996));
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+}
+
+.main__container {
+  background: #74ebd5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ACB6E5), to(#74ebd5));
+  background: linear-gradient(to right, #ACB6E5, #74ebd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 7rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.container .min__value, .container .max__value {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .min__value input, .container .max__value input {
+  width: 16rem;
+  height: 3rem;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 2rem;
+  border: 1px solid #cccbcb;
+}
+
+.container .min__value label, .container .max__value label {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.container .min__value label i, .container .max__value label i {
+  font-size: 1.6rem;
+}
+
+.container .dash {
+  width: 4rem;
+  height: 4rem;
+}
+
+.container .dash img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.main {
+  width: 80%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  gap: 2vw;
+  z-index: 0;
+}
+
+.main__box {
+  width: 23%;
+  height: 20vw;
+  position: relative;
+  background-size: cover;
+}
+
+.main__box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  opacity: 1;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position-y: top;
+}
+
+.main__box p {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  opacity: 0;
+  position: relative;
+  z-index: 999;
+  color: white;
+}
+
+@media only screen and (min-device-width: 999px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-device-width: 998px) {
+  html {
+    font-size: 11px;
+  }
+  .main__box {
+    width: 31%;
+    height: 28vw;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  html {
+    font-size: 11px;
+  }
+  .main__box {
+    width: 45%;
+    height: 35vw;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .main {
+    gap: 10vw;
+  }
+  .main__box {
+    width: 100%;
+    height: 90vw;
+  }
+}
+
+@media only screen and (max-device-width: 410px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px;
+  }
+}

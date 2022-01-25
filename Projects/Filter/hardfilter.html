@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3113ae62d0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/hardfilter.css">
+    <title>HardFilter</title>
+    
+</head>
+<body>
+    <header>
+    <div class="select-wrapper">
+        <select name="Mark" id="Mark">
+            <option  data-mark="All" value="">All Cars</option>
+            <option  data-mark="Hyundai" value="">Hyundai</option>
+            <option  data-mark="Honda" value="">Honda</option>
+            <option  data-mark="Mercedes" value="">Mercedes</option>
+            <option  data-mark="Volkswagen"  value="">Volkswagen</option>
+          
+        </select>
+       
+        <div class="title">Mark</div>
+    </div>
+    <div class="select-wrapper">
+        <select name="Model" id="Model">
+                <option value="null"></option>
+                <option data-mark="Hyundai" data-model="Sonata" value="">Sonata</option>
+                <option data-mark="Hyundai" data-model="Accent" value="">Accent</option>
+                <option data-mark="Honda" data-model="Accord" value="">Accord</option>
+                <option data-mark="Honda" data-model="Element" value="">Element</option>
+                <option data-mark="Mercedes" data-model="Viano" value="">Viano</option>
+                <option data-mark="Mercedes" data-model="Vito" value="">Vito</option>
+                <option data-mark="Volkswagen" data-model="Amarok" value="">Amarok</option>
+                <option data-mark="Volkswagen" data-model="Golf" value="">Golf</option>
+               
+        </select>
+      
+        <div class="title">Model</div>
+    </div>
+    <div class="select-wrapper">
+        <select name="Year" id="Year">
+            <option value="null"></option>
+            <option data-year="2011" value="">2011</option>
+            <option data-year="2014" value="">2014</option>
+            <option data-year="2021" value="">2021</option>
+            <option data-year="2012" value="">2012</option>
+            <option data-year="2010" value="">2010</option>
+            <option data-year="2003" value="">2003</option>
+
+        </select>
+        
+      
+        <div class="title">Year</div>
+    </div>
+    </header> 
+    <div class="main">
+        <div data-mark="Hyundai" data-model="Sonata" data-year="2011" class="box"><div class="inner"></div><img src="./img/sonata11.jpg" alt=""></div>
+        <div data-mark="Hyundai" data-model="Sonata" data-year="2021" class="box"><div class="inner"></div><img src="./img/sonata21.jpg" alt=""></div>
+        <div data-mark="Hyundai" data-model="Accent" data-year="2012" class="box"><div class="inner"></div><img src="./img/accent12.jpg" alt=""></div>
+        <div data-mark="Hyundai" data-model="Accent" data-year="2014" class="box"><div class="inner"></div><img src="./img/accent14.jpg" alt=""></div>
+        <div data-mark="Honda" data-model="Accord" data-year="2010" class="box"><div class="inner"></div><img src="./img/accord10.jpg" alt=""></div>
+        <div data-mark="Honda" data-model="Accord" data-year="2021" class="box"><div class="inner"></div><img src="./img/accord21.jpg" alt=""></div>
+        <div data-mark="Honda" data-model="Element" data-year="2021" class="box"><div class="inner"></div><img src="./img/element21.png" alt=""></div>
+        <div data-mark="Mercedes" data-model="Viano" data-year="2014" class="box"><div class="inner"></div><img src="./img/viano14.jpg" alt=""></div>
+        <div data-mark="Mercedes" data-model="Viano" data-year="2021" class="box"><div class="inner"></div><img src="./img/viano21.jpg" alt=""></div>
+        <div data-mark="Mercedes" data-model="Vito" data-year="2011" class="box"><div class="inner"></div><img src="./img/vito11.jpg" alt=""></div>
+        <div data-mark="Mercedes" data-model="Vito" data-year="2003" class="box"><div class="inner"></div><img src="./img/vito2003.jpeg" alt=""></div>
+        <div data-mark="Volkswagen" data-model="Amarok" data-year="2012" class="box"><div class="inner"></div><img src="./img/amarok2012.jpg" alt=""></div>
+        <div data-mark="Volkswagen" data-model="Amarok" data-year="2014" class="box"><div class="inner"></div><img src="./img/amarok2014.jpg" alt=""></div>
+        <div data-mark="Volkswagen" data-model="Amarok" data-year="2021" class="box"><div class="inner"></div><img src="./img/amarok21.jpg" alt=""></div>
+        <div data-mark="Volkswagen" data-model="Golf" data-year="2010" class="box"><div class="inner"></div><img src="./img/golf10.jpg" alt=""></div>
+        <div data-mark="Volkswagen" data-model="Golf" data-year="2012" class="box"><div class="inner"></div><img src="./img/golf2012.jpg" alt=""></div>
+        <div data-mark="Volkswagen" data-model="Golf" data-year="2021" class="box"><div class="inner"></div><img src="./img/golf21.jpg" alt=""></div>
+
+
+
+        
+        
+    </div>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./jquery-hoverdirection.js"></script> 
+    <script src="./js/hardfilter.js"></script>
+</body>
+</html>
