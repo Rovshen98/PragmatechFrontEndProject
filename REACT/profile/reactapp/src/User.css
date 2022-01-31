@@ -1,0 +1,9 @@
+.main > div > div{
+    display: inline-block;
+    color: rgb(199, 194, 194);
+    margin-right: 15px;
+}
+div{
+    color: white;
+    font-size: 20px;
+}
