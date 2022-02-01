@@ -1,0 +1,39 @@
+footer {
+  width: 120rem;
+  height: 5.76rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20rem;
+}
+
+footer img {
+  width: 5rem;
+  height: 1.3rem;
+}
+
+footer p {
+  font-size: 1.1rem;
+  color: #868e96;
+}
+
+footer a {
+  color: #a5aeb6;
+  font-size: 1.6rem;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color: #bdc4ca;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
