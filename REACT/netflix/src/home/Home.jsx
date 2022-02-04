@@ -1,10 +1,15 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useContext } from 'react';
+import Slider from "../slider/slider";
+
+import {BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; 
 import { MoviesContext } from '../Context';
 import '../home/Home.css';
 
 
 function Home() {
+   
+      
     const { sliderdata } = useContext(MoviesContext)
 
     // main slider
@@ -131,24 +136,10 @@ function Home() {
     }
 
     // slider js
-    let count=0;
-    const sectionslider = useRef([]);
-    
-    const  sliderprev=(e)=>{
-                count--
-            for(let i=0;i<4;i++){
-               console.log(sectionslider.current[i])}
-                sectionslider.current.style.transform=`translateX(${-27 * count}rem)`
-              
-
-    }
-    const  slidernext=()=>{
-        count++
-        sectionslider.current.style.transform=`translateX(${-27 * count}rem)`
-
-}
+   
 
     return <div className='homepage'>
+
         <div onMouseLeave={startinterval} onMouseEnter={stopinterval} ref={sliderWrap} onLoad={whenload} className="slider-wrap">
             <div onTransitionEnd={transitionend} ref={slider} className="slider">
                 {
@@ -180,31 +171,13 @@ function Home() {
 
         <div className="moviessection">
             {
+                
                 sliderdata.map((item) => {
-
+                    
+                       
                     return (
-
-                        <div className="section">
-                            <h2 className="slider_title">{item.title}</h2>
-                            <div ref={sectionslider} className="section-slider">
-                                {item.movies.map((movieitem) => {
-                                    
-                                    return <div className="item"><img src={`/img/${movieitem.mainimg}.jpg`} alt="" />
-                                        <div>
-                                            <h2>{movieitem.moviename}</h2>
-                                            <div> <span>{movieitem.match}</span><div>{movieitem.TV}</div>{movieitem.text}  </div>
-                                        </div>
-
-                                    </div>
-
-                                })}
-
-                            
-
-                            </div>
-                            <div onClick={sliderprev} className="sliderprevbtn"><i className="fas fa-angle-left"></i></div>
-                            <div onClick={slidernext} className="slidernextbtn"><i className="fas fa-angle-right"></i></div>
-                        </div>
+                            <Slider title={item.title} movies={item.movies}/>
+                        
                     )
                 })
             }
