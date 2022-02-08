@@ -1,0 +1,25 @@
+
+.todo{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    padding: 0 2%;
+    border-top: 1px solid rgb(221, 218, 218);
+    border-bottom: 1px solid rgb(221, 218, 218);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .text{
+        width:30% ;
+        height: max-content;
+    }
+    i{
+        font-size: 15px;
+        color: red;
+        cursor: pointer;
+        &:hover{
+            transition: 0.5s;
+            color: black;
+        }
+    }
+}

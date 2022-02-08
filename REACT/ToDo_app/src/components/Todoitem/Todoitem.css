@@ -1,0 +1,36 @@
+.todo {
+  width: 100%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2%;
+  border-top: 1px solid #dddada;
+  border-bottom: 1px solid #dddada;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.todo .text {
+  width: 30%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.todo i {
+  font-size: 15px;
+  color: red;
+  cursor: pointer;
+}
+
+.todo i:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+}
