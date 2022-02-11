@@ -1,3 +1,13 @@
 .Home {
-  margin-top: 700px;
+  width: 100%;
+  padding: 9rem 2% 0 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2vw;
 }

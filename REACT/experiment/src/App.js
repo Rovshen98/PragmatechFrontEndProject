@@ -1,33 +1,21 @@
-import {useEffect,useState,createContext} from "react";
+import { useEffect, useState, createContext, useRef } from "react";
 import './App.css';
 import Main from "./main";
 export const newcontext = createContext()
 
 function App() {
-  const [name, setname] = useState([{
-    name:"Murad"
-  },
-  {
-    name:"Rovsen"
-  }])
+  const [name, setname] = useState("salam")
 
-  
-useEffect(() => {
-  console.log(document.querySelector(".App"))
-  return function(){
-    
-        
-  }
+  const input = useRef()
  
-  
-},[])
-
+console.log(name)
   return (
     <div className="App">
-        {<newcontext.Provider value={{name,setname}}>
-          <Main/>
-          
-        </newcontext.Provider>}
+      <newcontext.Provider value={name, setname}> 
+        <Main />
+        
+        
+       </newcontext.Provider>
     </div>
   );
 }
