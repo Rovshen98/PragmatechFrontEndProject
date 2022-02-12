@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact";
 import Gallery from "./components/Gallery/Gallery";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
+import Footer from "./components/Footer/Footer";
 import './App.css';
 export const homecontext =createContext()
 
@@ -64,6 +65,7 @@ function App() {
         <Route path="/contact"  element={<Contact/>}/>
       </Routes>
       </homecontext.Provider>
+      <Footer/>
     </Router>
 
     

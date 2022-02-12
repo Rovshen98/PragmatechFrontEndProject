@@ -1,0 +1,44 @@
+footer {
+  width: 100%;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+footer p::-moz-selection {
+  color: white;
+  background-color: transparent;
+}
+
+footer p::selection {
+  color: white;
+  background-color: transparent;
+}
+
+footer p span {
+  display: inline-block;
+  color: #20c997;
+}
+
+footer p span::-moz-selection {
+  color: white;
+  background-color: transparent;
+}
+
+footer p span::selection {
+  color: white;
+  background-color: transparent;
+}

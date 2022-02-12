@@ -9,6 +9,7 @@ function Home_card({item}) {
         <div className='Home__card'>
             <img src={`img/Home/${item.img}`} alt="" />
            <h2>{item.name}</h2>
+           <Link to='/gallery'>MORE PHOTOS</Link>
           
         </div>
     )
