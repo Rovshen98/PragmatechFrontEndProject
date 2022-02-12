@@ -13,4 +13,11 @@ body,#root{
   background: #000;
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+@media only screen and (max-device-width:1199px){
+  html{
+    font-size: 8px;
+  }
 }

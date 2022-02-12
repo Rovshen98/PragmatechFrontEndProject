@@ -53,3 +53,15 @@
     }
     
 }
+@media only screen and (max-device-width:880px) {
+    .About__card__item {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-device-width:650px) {
+    .About__card__item {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

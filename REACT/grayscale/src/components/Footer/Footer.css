@@ -16,6 +16,8 @@ footer p {
   font-weight: 400;
   font-size: 1.6rem;
   color: #777;
+  text-align: center;
+  padding: 0 10px;
 }
 
 footer p::-moz-selection {

@@ -37,6 +37,7 @@
         top: 0;
         left: 0;
         filter: grayscale(1);
+        object-fit: cover;
         z-index: 1;
         transition: 0.3s;
     }
@@ -45,8 +46,8 @@
         position: relative;
         z-index: 5;
         font-weight: 500;
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
+        font-size: 30px;
+        margin-bottom: 15px;
     }
     a {
         position: relative;
@@ -54,11 +55,11 @@
         text-decoration: none;
         color: #fff;
         border:2px solid white;
-        font-size: 1.2rem;
+        font-size: 12px;
         letter-spacing: .1rem;
         font-weight: 500;
-        width: 14.5rem;
-        height: 3.5rem;
+        width: 145px;
+        height: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,4 +71,17 @@
             color: black;
         }
     }
+}
+
+@media only screen and (max-device-width:1199px){
+    .Home__card{
+        width: 46vw;
+        height: 40vw;
+    } 
+}
+@media only screen and (max-device-width:687px){
+    .Home__card{
+        width: 100%;
+        height: 70vw;
+    } 
 }

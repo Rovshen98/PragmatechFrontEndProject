@@ -11,3 +11,9 @@
       flex-wrap: wrap;
   gap: 2vw;
 }
+
+@media only screen and (max-device-width: 687px) {
+  .Home {
+    gap: 5vw;
+  }
+}

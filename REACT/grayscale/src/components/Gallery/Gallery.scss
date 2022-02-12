@@ -17,3 +17,9 @@
         margin-bottom: 5rem;
     }
 }
+
+@media only screen and (max-device-width:687px){
+        .Gallery__wrapper{
+            gap:5vw
+        }
+}

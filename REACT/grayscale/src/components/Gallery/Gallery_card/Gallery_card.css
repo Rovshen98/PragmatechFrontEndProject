@@ -27,3 +27,24 @@
   transition: 0.1s all ease-in-out;
   cursor: pointer;
 }
+
+@media only screen and (max-device-width: 1199px) {
+  .gallery__card {
+    width: 30vw;
+    height: 22vw;
+  }
+}
+
+@media only screen and (max-device-width: 890px) {
+  .gallery__card {
+    width: 47vw;
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-device-width: 687px) {
+  .gallery__card {
+    width: 100%;
+    height: 60vw;
+  }
+}
