@@ -1,0 +1,74 @@
+.About{
+    width: 100%;
+    padding: 9rem 2% 0 2%;
+    h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 7rem;
+        margin-top: 11rem;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        gap: 2vw;
+        margin-bottom: 5rem;
+        .container{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            &__left{
+                width: 55vw;
+                height: 47vw;
+                position: relative;
+                transition:all 0.3s ease-in-out;
+                filter: grayscale(1);
+                &:hover{
+                    transition:all 0.3s ease-in-out;
+                    transform: scale(1.01);
+                    filter: grayscale(0);
+                }
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            &__right{
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                margin-left: auto;
+               h2{
+                margin-bottom: 1rem;
+                font-family: inherit;
+                font-weight: 500;
+                line-height: 1.2;
+                font-size: 3rem;
+                color: white;  
+               }
+               p{
+                    line-height: 1.7;
+                    color: #777;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    margin-bottom: 1.6rem;
+               }
+               
+            }
+        }
+
+        .About__card{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            justify-content: flex-start;
+            margin: 9rem 0;
+        }
+        
+    }
+}

@@ -1,0 +1,20 @@
+.Services {
+    width: 100%;
+    padding: 9rem 2% 0 2%;
+    h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 7rem;
+        margin-top: 11rem;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        gap: 2vw;
+        margin-bottom: 5rem;
+        
+    }
+}

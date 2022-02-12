@@ -27,10 +27,10 @@ function Header() {
             setheader(false)
         }, 700);
     }
-
+    
     useEffect(() => {
         makeanima()
-
+        window.scrollTo(0, 0)
 
     }, [location.pathname])
 

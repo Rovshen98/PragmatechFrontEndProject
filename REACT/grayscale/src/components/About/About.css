@@ -1,0 +1,106 @@
+.About {
+  width: 100%;
+  padding: 9rem 2% 0 2%;
+}
+
+.About h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 7rem;
+  margin-top: 11rem;
+}
+
+.About__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2vw;
+  margin-bottom: 5rem;
+}
+
+.About__wrapper .container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.About__wrapper .container__left {
+  width: 55vw;
+  height: 47vw;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.About__wrapper .container__left:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.About__wrapper .container__left img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.About__wrapper .container__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin-left: auto;
+}
+
+.About__wrapper .container__right h2 {
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 3rem;
+  color: white;
+}
+
+.About__wrapper .container__right p {
+  line-height: 1.7;
+  color: #777;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.About__wrapper .About__card {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 9rem 0;
+}
