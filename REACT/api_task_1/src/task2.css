@@ -1,0 +1,45 @@
+#root{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.task2{
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.image{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+button{
+    width: 200px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: white;
+    transition: 0.5s;
+}
