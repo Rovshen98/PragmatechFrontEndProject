@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import App from './Task2';
+import "./task4.css"
+import App from './Task4';
 
 
 ReactDOM.render(

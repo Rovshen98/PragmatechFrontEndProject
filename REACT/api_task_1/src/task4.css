@@ -1,0 +1,112 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body,#root{
+     width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+  }
+  
+.task4{
+    width: 70%;
+    height:max-content;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 70px;
+
+}
+
+.search{
+  width: 100%;
+  height: max-content;
+  text-align: center;
+}
+
+input{
+  width: 200px;
+  height: 30px;
+}
+.btn{
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  
+}
+.boxes{
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.box{
+width: 31%;
+height: 250px;
+background-color: white;
+padding: 10px;
+display:flex;
+flex-direction: column;
+gap: 15px;
+border-radius: 10px;
+box-shadow: 1px 1px 10px aqua;
+}
+h1{
+  font-size: 16px;
+}
+h2{
+  font-size: 16px;
+}
+
+.loading{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(67, 221, 67);
+  animation:.7s anima infinite;
+  margin-left: 42%;
+}
+
+@keyframes anima{
+  0%{
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  100%{
+    transform:scale(1);
+    opacity:0;
+  }
+}
+
+.buttons{
+  margin-bottom: 50px;
+  display: flex;
+  gap:12px
+}
+.pagination{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(197, 194, 194) ;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination:focus{
+      background-color: rgb(122, 118, 118)  ;
+}
+
+
+
+
+
+

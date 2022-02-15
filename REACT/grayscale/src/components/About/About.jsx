@@ -4,19 +4,19 @@ import About_card from './About_card/About_card';
 function About() {
   const [about, setabout] = useState([
     {
-      id:Math.random()*1000,
+      id:100,
       img:"about",
       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?",
 
     },
     {
-      id:Math.random()*1000,
+      id:101,
       img:"about1",
       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?",
       
     },
     {
-      id:Math.random()*1000,
+      id:102,
       img:"about2",
       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?",
       

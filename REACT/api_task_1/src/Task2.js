@@ -1,4 +1,4 @@
-
+import axios from 'axios';
 import React, { useState } from 'react';
 import "./task2.css";
 
@@ -13,6 +13,9 @@ function App() {
             .then(data => {
                 setimg(data[0].url) 
             });
+
+            
+
         }
 
       

@@ -25,8 +25,23 @@ function Header() {
             setbutton(false)
         }
     }
-    window.addEventListener("load", showbutton)
-    window.addEventListener("resize",showbutton)
+
+
+    useEffect(() => {
+        
+        window.addEventListener("load", showbutton)
+        window.addEventListener("resize",showbutton)
+    
+        return () => {
+    
+          window.removeEventListener('load', showbutton);
+          window.removeEventListener('resize', showbutton);
+    
+        };
+    
+      }, []);
+   
+   
     const makeanima = () => {
         setheader(true)
         setTimeout(() => {

@@ -4,8 +4,7 @@ const Todoitem=({nametext, todoitem ,surnametext, todo, settodo})=> {
 
   const deleteitem =()=>{
       settodo(todo.filter((elem)=> todoitem.id !==elem.id))
-      
-  }
+}
   return <div className='todo'>
      <div className='text'>{nametext}</div>
      <div className='text'>{surnametext}</div>
