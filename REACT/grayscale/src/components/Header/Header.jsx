@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from "react-router-dom";
-import {GiHamburgerMenu} from 'react-icons/gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTwitter, FaInstagram, FaYoutube, FaFacebookF } from 'react-icons/fa';
-import {MdClose} from 'react-icons/md';
+import { MdClose } from 'react-icons/md';
 import "./Header.css"
 function Header() {
     const [button, setbutton] = useState(false)
@@ -10,14 +10,14 @@ function Header() {
     const [menu, setmenu] = useState(false)
     const location = useLocation();
 
-    const openmenubar =()=>{
+    const openmenubar = () => {
         setmenu(true)
     }
-    const closemenubar =()=>{
+    const closemenubar = () => {
         setmenu(false)
     }
 
-    
+
     const showbutton = () => {
         if (window.innerWidth <= 1199) {
             setbutton(true)
@@ -28,39 +28,41 @@ function Header() {
 
 
     useEffect(() => {
-        
+
         window.addEventListener("load", showbutton)
-        window.addEventListener("resize",showbutton)
-    
+        window.addEventListener("resize", showbutton)
+
         return () => {
-    
-          window.removeEventListener('load', showbutton);
-          window.removeEventListener('resize', showbutton);
-    
+
+            window.removeEventListener('load', showbutton);
+            window.removeEventListener('resize', showbutton);
+
         };
-    
-      }, []);
-   
-   
+
+    }, []);
+
+
     const makeanima = () => {
         setheader(true)
         setTimeout(() => {
             setheader(false)
         }, 700);
     }
+
     
+    
+
     useEffect(() => {
         makeanima()
-        window.scrollTo(0, 0)
         closemenubar()
-
+      
     }, [location.pathname])
 
     return (
         <header className={header ? "headeranima" : ""} >
             <div className="logo">Photosen</div>
             <div className={menu ? 'menu menu__active' : "menu menu__passive"}>
-            <MdClose onClick={closemenubar} className='close__icon' size='18px' color='black'/>
+                <MdClose onClick={closemenubar} className='close__icon' size='18px' color='black' />
                 <ul>
                     <li>
                         <NavLink style={({ isActive }) => ({
@@ -101,7 +103,7 @@ function Header() {
                 <div className="icon"><FaYoutube size='16px' /></div>
             </div>
             <div onClick={openmenubar} className={button ? "icon__active" : "passive"}>
-                     < GiHamburgerMenu size='16px' color='white'/>
+                < GiHamburgerMenu size='16px' color='white' />
             </div>
         </header>
     )

@@ -2,30 +2,28 @@
 import Header from "./header/header.jsx";
 import Home from "./home/Home.jsx";
 import Footer from "./footer/footer"
-import MoviesProvider from "./Context.jsx";
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import Movieitem from './movieitem/Movieitem';
+
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+// import Movieitem from './movieitem/Movieitem';
 
 function App() {
      
 
 
   return (
-    <MoviesProvider>
+    <div className="App">
+    
      <BrowserRouter>
+     <Header />
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/movie/:id" element={<Movieitem />} />
+          <Route path="/" element={<Home/>} />
+          {/* <Route path="/movie/:id" element={<Movieitem />} /> */}
         </Routes>
-     
-      <div className="App">
-        
-        <Header />
-        <Home />
-        <Footer />
-      </div> 
+      <Footer />
+      
       </BrowserRouter>
-    </MoviesProvider>
+   
+    </div> 
   );
 }
 

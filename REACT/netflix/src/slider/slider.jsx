@@ -1,72 +1,71 @@
-import React, { useState, useContext } from 'react';
-
-import {BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { MoviesContext } from '../Context';
-
-export function Slider({ title, movies }) {
-     
-
-
-    const [transform, settransform] = useState(null);
-    const [count, setcount] = useState(1);
-
-    const sliderprev = (e) => {
-        
-        if (count >= 1) {
-            setcount(count - 1)
-            settransform(-27 * count)
-            
-        } else if(count==movies.length) {
-            setcount(count - 1)
-            settransform(-27 * count)
-        }
-        else{
-            
-            setcount(0)
-            settransform(-27 * count)
-        }
-        
+import React, { useState, useEffect } from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import axios from 'axios';
+export const header = {
+    "Content-Type": "application/json;charset=utf-8",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyODVhMTA3ZjBjOTJjZmRhNDY3ZGIyMjFjY2M1MDJmNyIsInN1YiI6IjVmMTk4MDI0YTZkOTMxMDAzNzg3MDUyZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aVQ18IpQSKo3ThEmEGr3JIMqfU24NvOo974ododdTBk"
+}
+function Slidermini({ miniitem }) {
 
 
+    const [minidata1, setminidata1] = useState(null)
+    const fetchminidata1 = async () => {
+        const response = await axios.get("https://api.themoviedb.org/3/list/7112724?page=1&api_key=285a107f0c92cfda467db221ccc502f7")
+        setminidata1(response.data.items)
+        // 7112724 New Releases
+        // 7113004 Romantic
+        // 8191391 Marvel
+        // 8191807 new movies
 
     }
-    const slidernext = () => {
-         
-        if(count<movies.length){
-            setcount(count + 1)
-             settransform(-27 * count)
-             
-        }else if(count>=movies.length){
-            setcount(movies.length)
-            settransform(-27 * count)
-        }
-     
 
+    useEffect(() => {
+        fetchminidata1()
+
+    }, [])
+
+    console.log(setminidata1)
+
+    const settings = {
+        slidesToShow: 1,
     }
+
+
     return (
-        <div className="section">
-            <h2 className="slider_title">{title}</h2>
-            <div style={{transform: `translateX(${transform}rem)`, transition: 'transform 0.5s linear'}} className="section-slider">
-                {movies.map((movieitem) => {
 
-                    return <Link to={`/movieitem/${movies.id}`}><div className="item"><img src={`/img/${movieitem.mainimg}.jpg`} alt="" />
-                        <div>
-                            <h2>{movieitem.moviename}</h2>
-                            <div> <span>{movieitem.match}</span><div>{movieitem.TV}</div>{movieitem.text}  </div>
-                        </div>
 
-                    </div></Link>
+        <>
 
+            <h2 className="slider_title">{miniitem.name}</h2>
+
+            <Slider
+                className="section"
+                {...settings}
+
+            >
+                {minidata1 && minidata1.map((item) => {
+                    return <a key={item.id} >
+                        <div className="item"><img src={`https://www.themoviedb.org/t/p/w500${item.backdrop_path}`} alt="" />
+                            <div>
+                                <h2>{item.name}</h2>
+
+                            </div>
+
+                        </div></a>
                 })}
 
+            </Slider>
 
 
-            </div>
-            <div onClick={sliderprev} className="sliderprevbtn"><i className="fas fa-angle-left"></i></div>
-            <div onClick={slidernext} className="slidernextbtn"><i className="fas fa-angle-right"></i></div>
-        </div>
+
+
+
+        </>
+
     )
 }
 
- 
-export default Slider;
+
+export default Slidermini;

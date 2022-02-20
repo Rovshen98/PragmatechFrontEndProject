@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import sliderdata from "../Context"
-function Movieitem() {
+// import React, { useContext } from 'react';
+// import sliderdata from "../Context"
+// function Movieitem() {
 
-    return <div>
+//     return <div>
 
 
-    </div>;
-}
+//     </div>;
+// }
 
-export default Movieitem;
+// export default Movieitem;

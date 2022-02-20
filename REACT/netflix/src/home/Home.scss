@@ -3,35 +3,35 @@
     height: max-content;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+    width: max-content;
+    height: max-content;
+}
 
-.slider-wrap {
-    width: 100%;
-    height: 43.5rem;
-    overflow: hidden;
-    position: relative;
-    .slider {
-        position: absolute;
+  .Slider-slick{
+      width: 100%;
+      height: 43.5rem;
+      cursor: pointer;
+      position: relative;
+  }
 
-        height: 100%;
-        width: max-content;
-        display: flex;
-        flex-wrap: nowrap;
-
-        &-item {
+        .item {
             width: 120rem;
-            height: 100%;
+            height: 43.5rem;
             position: relative;
             &-left {
                 width: 43.5rem;
                 height: 43.5rem;
                 padding-left: 4%;
-                box-shadow: 80px 0 80px 18px rgba(0, 0, 0, 0.96);
+                box-shadow: 80px 0 80px 30px rgba(0, 0, 0, 0.96);
                 background-color: rgba(0, 0, 0, 0.96);
                 padding-top: 5px;
                 h2 {
                     width: 100%;
                     font-size: 2.7rem;
                     color: white;
+                    margin-bottom: 2rem;
                 }
                 h3 {
                     font-size: 1.3rem;
@@ -83,62 +83,54 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 84rem;
+                width: 80rem;
                 height: 100%;
                 z-index: -5;
+                
                 box-shadow: inset 200px 0 102px -30px rgba(0, 0, 0, 0.8);
             }
         }
-    }
-    .prevbtn {
-        width: 4.8rem;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: rgba(0, 0, 0, 0.1);
-        z-index: 9999;
-        border: none;
-        outline: none;
+    
+    .slick-prev,.slick-next {
+        width: 4.8rem !important;
+        height: 43.5rem !important;
+        position: absolute !important;
+        margin: 0 !important;
+        
+        background: rgba(0, 0, 0, 0.1) !important;
+        z-index: 9999 !important;
+        border: none !important;
+        outline: none !important;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.5s;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: 0.5s !important;
         &:hover {
-            background-color: rgba(0, 0, 0, 0.267);
+            background-color: rgba(0, 0, 0, 0.267) !important;
             cursor: pointer;
             transition: 0.5s;
         }
-        i {
-            font-size: 18px;
-            color: white;
-        }
+        
+        
     }
-    .nextbtn {
-        width: 4.8rem;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        border: none;
-        outline: none;
-        background: rgba(0, 0, 0, 0.1);
-        transition: 0.5s;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.267);
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        i {
-            font-size: 18px;
-            color: white;
-        }
+
+    .slick-prev{
+        left: 0 !important;
+        top: 0 !important;
+        bottom: unset !important;
+        transform: unset !important;
+      
     }
-}
+    .slick-next {
+       
+        right: 0  !important;
+        top: 0 !important;
+        bottom: unset !important;
+        transform: unset !important;
+        }
+        
+    
+
 
 // slider section
 .moviessection {
@@ -173,7 +165,7 @@
             padding-left: 4.6rem;
             .item {
                 width: 27rem;
-                height: 15.3rem;
+                height: 15.2rem;
                 position: relative;
                 margin: 0 0.5rem;
                 display: flex;
@@ -195,17 +187,18 @@
                 &:after{
                     content: "";
                     width: 104%;
-                    height: 104%;
+                    height: 106%;
                     position: absolute;
                     z-index: 8;
                     background-color: black;
                     
-                    top: -2%;
+                    top: -3%;
                     left: -2%;
                     display: none;
                 }
                 &:hover {
-                    transform: scale(1.5);
+                    width: 45rem;
+                    transform: scaleY(1.5);
                     z-index: 10;
                     transition: 0.5s;
                     cursor: pointer;
