@@ -1,0 +1,57 @@
+.createlistmodal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: 99999;
+    cursor: pointer;
+}
+.createlistmodal__wrapper{
+        width: 50rem;
+        height: 35rem;
+      
+        gap: 1.5rem;
+        background-color: aliceblue;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        position: absolute;
+        
+    
+        input{
+            width: 100%;
+            height: 4rem;
+            outline: none;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding:  0 10px;
+        }
+        button{
+            width: 10rem;
+            height: 4rem;
+            border: none;
+            background-color: rgb(56, 223, 167);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            &:hover{
+                cursor:pointer;
+                background-color: black;
+                transition: 0.5s;
+            }
+        }
+}
+.displaynone{
+    display: none;
+}

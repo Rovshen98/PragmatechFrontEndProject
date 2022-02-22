@@ -1,1 +1,9 @@
-/* No CSS */
+.section {
+  width: 100%;
+  height: 200px;
+}
+
+.section .iteml {
+  width: 150px;
+  height: 100%;
+}

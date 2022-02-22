@@ -22,15 +22,25 @@
             height: 100%;
         }
     }
-    &__register{
-        font-size: 14px;
-        font-weight: 700;
-        color:  #b81d24;
-        transition: 0.5s;
+    input{
+        width: 15rem;
+        height: 3rem;
+        outline: none;
+        border: 2px solid #b81d24;
+        border-radius: 5px;
+    }
+    .createlist{
+        width: 10rem;
+        font-size: 1.3rem;
+        color: white;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
         &:hover{
-            color: #e81e25;
-            transition: 0.5s;
+            opacity: 0.5;
             cursor: pointer;
+            transition: 0.5s;
         }
     }
+   
 }

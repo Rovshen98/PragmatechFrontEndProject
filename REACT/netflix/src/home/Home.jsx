@@ -1,33 +1,16 @@
-import React, { useRef, useEffect, useState } from 'react';
-
+import React, { useRef, useContext, useEffect, useState } from 'react';
 import Slidermini from "../slider/slider";
 import '../home/Home.css';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { MyContext } from "../App";
 import axios from 'axios';
 
 function Home() {
+    const ctx = useContext(MyContext)
     const [data, setData] = useState(null)
-    const [minislider, setminislider] = useState([
-        {
-            id: 1,
-            name: "Romantic",
-        },
-        {
-            id: 2,
-            name: "Marvel"
-        },
-        {
-            id: 3,
-            name: "New Releases"
-        },
-        {
-            id: 4,
-            name: "New Movies"
-        }
-    ])
+
     const settings = {
         dots: true,
         infinite: true,
@@ -36,16 +19,23 @@ function Home() {
         slidesToScroll: 1,
         autoplay: true,
         pauseOnHover: true,
-    };
+    }
     const fetchdata = async () => {
         const response = await axios.get("https://api.themoviedb.org/3/list/7112632?page=1&api_key=285a107f0c92cfda467db221ccc502f7")
-        const slicedata = response.data.items.slice(0, 3)
+        const slicedata = response.data.items.slice(2, 5)
         setData(slicedata)
     }
 
     useEffect(() => {
         fetchdata()
+
     }, [])
+
+
+    
+
+
+  
 
     // main slider
 
@@ -81,11 +71,9 @@ function Home() {
 
 
         <div className="moviessection">
-            {
-                 minislider.map((miniitem) => {
-                    return <Slidermini miniitem={miniitem} key={miniitem.id} />
-                })
-            }
+           
+                 <Slidermini />
+           
         </div>
     </div>;
 }
