@@ -1,11 +1,11 @@
-// import React, { useContext } from 'react';
-// import sliderdata from "../Context"
-// function Movieitem() {
+import React from 'react';
+import "./Movieitem.css";
+function Movieitem({movieitem}) {
 
-//     return <div>
+    return <div className='movieitem'>
+        <img src={`https://www.themoviedb.org/t/p/w500${movieitem.backdrop_path}`} alt="" />
+        <h3>{movieitem.title}</h3>
+    </div>
+}
 
-
-//     </div>;
-// }
-
-// export default Movieitem;
+export default Movieitem;

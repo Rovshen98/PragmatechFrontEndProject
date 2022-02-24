@@ -21,7 +21,7 @@ function Createlist() {
                 "name": listName.current.value,
                 "iso_639_1": "en"
             }
-        ,  {headers:{
+        ,{headers:{
                 "Content-Type": "application/json;charset=utf-8",
                 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MzU5NzU4MzYsImF1ZCI6IjI4NWExMDdmMGM5MmNmZGE0NjdkYjIyMWNjYzUwMmY3IiwianRpIjoiMzY4NzEzNSIsInNjb3BlcyI6WyJhcGlfcmVhZCIsImFwaV93cml0ZSJdLCJ2ZXJzaW9uIjoxLCJzdWIiOiI1ZjE5ODAyNGE2ZDkzMTAwMzc4NzA1MmYifQ.ZP8HlEcAthUMlIThvRa-keAxFBkIZ24fL1p_jiFWk_U"
                 }
@@ -52,7 +52,7 @@ function Createlist() {
     return (
         <div onClick={closemodal} className={ctx.openmodallist ? `createlistmodal` : "displaynone"}>
             <div className="createlistmodal__wrapper">
-                <input ref={listId} placeholder='List Id-si' className='category__id' type="text" />
+                
                 <input ref={listName} placeholder='List adı' className='category__name' type="text" />
                 <button onClick={createlist} className='listsubmit' >Əlavə et</button>
             </div>
